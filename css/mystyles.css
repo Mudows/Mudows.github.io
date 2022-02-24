@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+body{
+    color: snow;
+    background-color: #030301;
+    font-family: 'Kalam', cursive;
+}
+
+p{
+    font-family: 'Kalam', cursive;
+    text-align: left;
+    font-size: 18px;
+}
+hr{
+    border-color: #3626a7;
+    border-style: dashed;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-weight: normal;
+    line-height: 10px;
+}
+
+h4{
+    color: #A22C29;
+    font-family: 'Metal Mania', cursive;
+    font-size: x-large;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1{
+    color: #A22C29;
+    font-family: 'Metal Mania', cursive;
+    font-size: 42px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 10px;
+}
+
+/* ul{
+    font-family: 'Metal Mania', cursive;
+    list-style-image: url('img/foguin.gif');
+} */
+
+#lista{
+    font-family: 'Metal Mania', cursive;
+    color: #A22C29;
+}

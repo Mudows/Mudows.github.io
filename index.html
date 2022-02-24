@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
-    </style>
-</head>
-<body bgcolor="000000">
-    <br>
-    <font face="Metal Mania" color="ffffff" size="10"><center>Diego Moraes Cezar</font>
-    <hr>
-    <img src="eu.jpg" alt="Maluco bonitão, né?" id="lindo">
-    <p><font face="Metal Mania" color="ffffff" size="4">Olá! Como vai você?<br>Me chamo <strong>Diego</strong>, resido no Rio de Janeiro (RJ), trabalhei por 5 anos na <strong>IBM</strong> na área de <em>Reporting (Assistente Administrativo)</em>, cursei <em>Game Development (Seven Game)</em> e <em>Game Design (SENAC)</em> e sou apaixonado por desenvolver jogos. Sou também um estudante ávido do Tarô e também ofereço consultas para quem desejar. Já deu pra ver que sou bem eclético, né?<br>Atualmente sou estudante de <strong>Desenvolvimento Web Full-Stack</strong> na <em>Trybe</em>. Sou apaixonado por ser pai, esposo, jogar video games, narrar mesas de RPG, criar sistemas de jogos, ler, esoterismo, estudar e criar soluções.<br>Atualmente estudando <em>JavaScript, JAVA, BASIC e Latim.</em></p></center>
-    <h4><center>Uma breve lista de minhas habilidades</center></h4>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Game Design</li>
-        <li>Tarô de Marselha</li>
-        <li>Tarô RWS</li>
-        <li>Linux</li>
-        <li>Relatórios Financeiros</li>
-        <li>Controle de Operações</li>
-    </ul></font>
-    <p><font face="Metal Mania" color="ffffff"><a href="#lindo"><center>Clique aqui para voltar para minha cara bonita.</a></p>
-    <p>Quer saber o que me faz rir? Dá uma olhada no <a href="https://www.ahnegao.com.br/">Ah Negão.</a> Vocẽ não vai se arrepender.</p></center></font>
-</body>
+
+    <!--CARREGANDO ARQUIVOS CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mystyles.css?ts=<?= time() ?>"
+    />
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <td style="text-align: right">
+          <img src="img/foguin2.gif" style="width: 100px; height: 100px" />
+        </td>
+        <td>
+          <h1>Portfólio</h1>
+          <h2>(Trabalho em Andamento)</h2>
+        </td>
+        <td style="text-align: left">
+          <img src="img/foguin2.gif" style="width: 100px; height: 100px" />
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+    <hr />
+
+    <table width="100%">
+      <tr>
+        <td>
+          <img
+            src="img/eu.jpg"
+            style="width: 400px; height: 300px"
+            id="lindo"
+          />
+        </td>
+        <td colspan="2">
+          <h4>Diego M. <em>"Mudows"</em> Cezar</h4>
+          <p>
+            Estudante de Web Develepment Full Stack
+            <br />
+            Rio de Janeiro - RJ
+            <br />
+            (21) 9XXXX-XXXX
+            <br />
+            email@gmail.com
+            <br />
+            <a
+              href="https://www.linkedin.com/in/diego-moraes-cezar-2b1b8076/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <br />
+            <a href="https://github.com/Mudows" target="_blank">GitHub</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <h4>Uma breve lista de minhas habilidades</h4>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="align-content: center">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Linux</li>
+            <li>JavaScript</li>
+            <li>Git/GitHub</li>            
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
 </html>
