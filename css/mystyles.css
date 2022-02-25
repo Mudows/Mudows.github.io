@@ -1,52 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 
-body{
-    color: snow;
-    background-color: #030301;
-    font-family: 'Kalam', cursive;
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #e8f0ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-p{
-    font-family: 'Kalam', cursive;
-    text-align: left;
-    font-size: 18px;
-}
-hr{
-    border-color: #3626a7;
-    border-style: dashed;
+.box {
+  width: 300px;
+  height: 300px;
+  background: #96c;
 }
 
-h2{
-    text-align: center;
-    font-family: 'Metal Mania', cursive;
-    font-weight: normal;
-    line-height: 10px;
-}
-
-h4{
-    color: #A22C29;
-    font-family: 'Metal Mania', cursive;
-    font-size: x-large;
-    font-weight: normal;
-    text-align: center;
+body {
+  margin: 0px;
+  color: #273c2c;
+  background-color: #dc9e82;
+  font-family: "Kalam", cursive;
 }
 
 h1{
-    color: #A22C29;
-    font-family: 'Metal Mania', cursive;
     font-size: 42px;
-    font-weight: normal;
-    text-align: center;
-    line-height: 10px;
+    color: #273c2c;
 }
 
-/* ul{
-    font-family: 'Metal Mania', cursive;
-    list-style-image: url('img/foguin.gif');
-} */
+a{
+    text-decoration: none;
+    color: #dc9e82;
+    font-weight: bold;
+}
 
-#lista{
-    font-family: 'Metal Mania', cursive;
-    color: #A22C29;
+.navButton{
+    background-color: #031a6b;
+    text-decoration: none;
+    font-size: large;
 }

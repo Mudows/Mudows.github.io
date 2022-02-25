@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--CARREGANDO ARQUIVOS CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mystyles.css?ts=<?= time() ?>"
+    />
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <td style="text-align: right">
+          <img src="img/foguin2.gif" style="width: 100px; height: 100px" />
+        </td>
+        <td>
+          <h1>Portfólio</h1>
+          <h2>(Trabalho em Andamento)</h2>
+        </td>
+        <td style="text-align: left">
+          <img src="img/foguin2.gif" style="width: 100px; height: 100px" />
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+    <hr />
+
+    <table width="100%">
+      <tr>
+        <td>
+          <img
+            src="img/eu.jpg"
+            style="width: 400px; height: 300px"
+            id="lindo"
+          />
+        </td>
+        <td colspan="2">
+          <h4>Diego M. <em>"Mudows"</em> Cezar</h4>
+          <p>
+            Estudante de Web Develepment Full Stack
+            <br />
+            Rio de Janeiro - RJ
+            <br />
+            (21) 9XXXX-XXXX
+            <br />
+            email@gmail.com
+            <br />
+            <a
+              href="https://www.linkedin.com/in/diego-moraes-cezar-2b1b8076/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <br />
+            <a href="https://github.com/Mudows" target="_blank">GitHub</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <h4>Uma breve lista de minhas habilidades</h4>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="align-content: center">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Linux</li>
+            <li>JavaScript</li>
+            <li>Git/GitHub</li>            
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
