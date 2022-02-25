@@ -2,20 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   background: #e8f0ff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .box {
   border-radius: 25px;
-  width: 300px;
+  width: 500px;
   height: 300px;
-  background: #96c;
+  background: #273c2c;
 }
 
 body {
@@ -41,4 +41,13 @@ a{
     background-color: #031a6b;
     text-decoration: none;
     font-size: large;
+}
+
+p, ul{
+  color: #e8f0ff;
+  font-size: large;
+}
+
+h2{
+  color: #e8f0ff;
 }
