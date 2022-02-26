@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    <!--Toca a música de fundo-->
     <embed
       src="bgm/SSA-Lobby.mp3"
       loop="true"
@@ -22,61 +23,108 @@
       width="2"
       height="0"
     />
-    <div class="container">
+    <div class="container"> <!--Container principal da página-->
+      <!--Cabeçalho da página com o nome e a foto-->
       <div>
-        <center>
-          <h1>&#9733; Diego Moraes Cezar &#9733;</h1>
-          <img src="img/eu.jpg" id="lindo" width="400" height="300" />
-          <br />
-          <br />
-          <table>
-            <tr>
-              <td align="center" width="200" class="navButton">
-                <a href="#sobre">Quem sou eu?</a>
-              </td>
-              <td align="center" width="200" class="navButton">
-                <a href="#habilidades">Minhas Habilidades</a>
-              </td>
-              <td align="center" width="200" class="navButton">
-                <a href="#">Contato</a>
-              </td>
-            </tr>
-          </table>
-        </center>
+        <h1 id="lindo">&#9733; Diego M. Cezar &#9733;</h1>
+      </div>
+      <div>
+        <img
+          class="lindo"
+          src="img/eu.jpg"
+          width="400"
+          height="300"
+        />
+      </div>
+      <div>
+        <br />
+        <br />
+        <!-- Barra de navegação da página. -->
+        <table>
+          <tr>
+            <td align="center" width="200" class="navButton">
+              <a href="#sobre">Quem sou eu?</a>
+            </td>
+            <td align="center" width="200" class="navButton">
+              <a href="#habilidades">Minhas Habilidades</a>
+            </td>
+            <td align="center" width="200" class="navButton">
+              <a href="#contato">Contato</a>
+            </td>
+            <td align="center" width="200" class="navButton">
+              <a href="#blogs">Blogs que gosto</a>
+            </td>
+          </tr>
+        </table>
       </div>
       <br />
       <br />
+      <br />
+      <br />
+      <!--Blodo do "Sobre Mim"-->
       <div class="box" id="sobre">
-        <center>
-          <h2>&#8225; Quem sou eu? &#8225;</h2>
-          <p>
-            Estudante de Web Dev Full-stack na Trybe<br />
-            Game Designer (Seven Game/SENAC)<br />
-            Residente do Rio de Janeiro - RJ<br />
-            RPGista de coração<br />
-            Pai e marido apaixonado<br /><br />
-            <a href="#lindo">&#9650; Voltar &#9650;</a>
-          </p>
-        </center>
+        <h2>&#8225; Quem sou eu? &#8225;</h2>
+        <p>
+          Estudante de Web Dev Full-stack na Trybe<br />
+          Game Designer (Seven Game/SENAC)<br />
+          Residente do Rio de Janeiro - RJ<br />
+          RPGista de coração<br />
+          Pai e marido apaixonado<br /><br />
+          <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
+        </p>
       </div>
       <br />
       <br />
+      <br />
+      <!--Bloco das "Minhas Habilidades"-->
       <div class="box" id="habilidades">
-        <center>
-          <h2>&#8225; Minhas Habilidades &#8225;</h2>
-          <p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-              <li>Game Design</li>
-              <li>Desenvolvimento de Sistemas de Regras</li>
-            </ul>
-            <a href="#lindo">&#9650; Voltar &#9650;</a>
-          </p>
-        </center>
+        <h2>&#8225; Minhas Habilidades &#8225;</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Game Design</li>
+        </ul>
+        <p>
+          <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
+        </p>
       </div>
+      <br />
+      <br />
+      <br />
+      <!--Bloco da lista de contatos-->
+      <div class="box" id="contato">
+        <h2>&#8225; Contato &#8225;</h2>
+        <p>
+          (21) 9xxxx-xxxx<br />
+          meuEmail@provedor.com<br />
+          <a class="back" href="https://www.linkedin.com/in/diego-moraes-cezar-2b1b8076/"
+            >LinkedIn</a
+          ><br /><br /><br /><br />
+          <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
+        </p>
+      </div>
+      <br />
+      <br />
+      <!--Bloco dos links externos-->
+      <div class="box" id="blogs">
+        <h2>&#8225; Blogs que Gosto &#8225;</h2>
+        <p>
+          <br>
+          <a class="back" href="https://www.ahnegao.com.br/" target="_blank">Ah Negão</a>
+          <br>
+          <a class="back" href="https://blog.betrybe.com/" target="_blank">Blog da Trybe</a>
+          <br>
+          <a class="back" href="https://www.sensacionalista.com.br/" target="_blank">Sensacionalista</a>
+          <br>
+          <br>
+          <br>
+          <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
+        </p>
+      </div>
+      <br>
+      <br>
     </div>
   </body>
 </html>
