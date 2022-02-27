@@ -1,60 +1,50 @@
+/************************************************/
+/********* Importando Fonts do Google ***********/
+/************************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
-.container {
-  width: 100vw;
-  /* height: 100vh; */
-  background: #e8f0ff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/************************************************/
+/* FORMATAÇÃO GERAL (afeta todos os elementos). */
+/************************************************/
 
-.box {
-  border-radius: 75px;
-  width: 500px;
-  height: 300px;
-  background: #273c2c;
-  opacity: 0.8;
-}
+/* *{
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+} */
 
-.lindo {
-  border-radius: 200px;
-  width: 400px;  
-  height: 300px;
-  box-shadow: 0 5px 10px rgba(184, 206, 239, 0.9);
-}
+/************************************************/
+/************** FORMATAÇÃO DE TAGS **************/
+/************************************************/
 
 body {
   margin: 0px;
   color: #273c2c;
   background-color: #dc9e82;
-  font-family: "Kalam", cursive;
+  font-family: "Alegreya", serif;
 }
 
 h1{
-    font-size: 56px;
-    color: #273c2c;
-    text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 56px;
+  color: #273c2c;
+  text-align: center;
+  font-weight: normal;
 }
 
 a{
-    text-decoration: none;
-    color: #dc9e82;
-    font-weight: bold;
+  text-decoration: none;
+  color: #dc9e82;
+  font-weight: bold;
 }
 
-.navButton{
-    border-radius: 25px;
-    border: 3px solid #031a6b;
-    background-color: #031a6b;
-    text-decoration: none;
-    font-size: large;
-}
-
-.navButton:hover{
-  border: 3px solid #dc9e82;
+a:hover{
+  background-color: #dc9e82;
+  color: #273c2c;
 }
 
 p, ul{
@@ -74,7 +64,80 @@ ul{
   padding: 0;
 }
 
-.back:hover{
-  background-color: #dc9e82;
-  color: #273c2c;
+hr{
+  border: 2px dashed rgba(184, 206, 239, 0.4);
+  border-radius: 5px;
+  width: 50vw;
+}
+
+/************************************************/
+/******************* CLASSES ********************/
+/************************************************/
+
+/* >>> Containers e Box em geral <<< */
+
+.container {
+  width: 100vw;
+  /* height: 100vh; */
+  background: #e8f0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border-radius: 75px;
+  width: 500px;
+  height: 300px;
+  background: #273c2c;
+  opacity: 0.8;
+}
+
+.lindo {
+  border-radius: 200px;
+  width: 400px;  
+  height: 300px;
+  box-shadow: 0 5px 10px rgba(184, 206, 239, 0.9);
+}
+
+/* >>> Navegação e Links <<< */
+
+.navButton{
+    border-radius: 25px;
+    border: 3px solid #031a6b;
+    background-color: #031a6b;
+    text-decoration: none;
+    font-size: large;
+}
+
+.navButton:hover{
+  border: 3px solid #dc9e82;
+}
+
+.navButton:hover a{
+  background-color: transparent;
+  color: #dc9e82;
+}
+
+.small-link{
+  color: #031a6b;
+  font-size: 10px;
+  font-style: italic;
+  text-align: left;
+}
+
+/* >>> Controle de Imagens <<< */
+
+.simbolo{
+  width: 50%;
+  height: 50%;
+  opacity: 0.1;
 }
