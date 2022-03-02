@@ -61,6 +61,7 @@ a{
   text-decoration: none;
   color: #dc9e82;
   font-weight: bold;
+  transition-duration: 0.4s;
 }
 
 a:hover{
@@ -90,7 +91,7 @@ hr{
 /******************* CLASSES ********************/
 /************************************************/
 
-/* >>> Containers e Box em geral <<< */
+/* >>>>>>> Containers e Box em geral <<<<<<< */
 
 .container {
   width: 100vw;
@@ -117,7 +118,7 @@ hr{
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
-/* >>> Navegação e Links <<< */
+/* >>>>>>> Navegação e Links <<<<<<< */
 
 .navButton{
     border-radius: 25px;
@@ -125,6 +126,7 @@ hr{
     background-color: #031a6b;
     text-decoration: none;
     font-size: large;
+    transition-duration: 0.4s;
 }
 
 .navButton:hover{
@@ -143,7 +145,7 @@ hr{
   text-align: left;
 }
 
-/* >>> Controle de Imagens <<< */
+/* >>>>>>> Controle de Imagens <<<<<<< */
 
 .simbolo{
   width: 50%;
