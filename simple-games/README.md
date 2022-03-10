@@ -14,6 +14,6 @@ These are simple JavaScript games that I'm making for JS practice. I'm using the
 * Connect Four (*on queue*);
 * Space Invaders (*on queue*)
 
-Wanna play them? [Click here!](https://mudows.github.io/simple-games/index.html)
+Wanna play them? <a href="https://mudows.github.io/simple-games/index.html" target="_blank">Click here!</a>
 
 Enjoy!
