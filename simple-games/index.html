@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple JS Games</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1 id="title">[ Mudow's Simple Games ]</h1>
+        <nav id="navbar">
+          <button><a href="#rps-anchor">Rock-Paper-Scissors</a></button>
+          <button><a href="#memory-anchor">Memory Game</a></button>
+          <button><a href="#whac-anchor">Whac-a-Mole</a></button>
+        </nav>
+      </header>
+
+      <hr id="rps-anchor" />
+
+      <!----------------------------------------------->
+      <!------------ ROCK, PAPER, SCISSORS ------------>
+      <!----------------------------------------------->
+
+      <article class="game-box">
+        <h1>[Rock-Paper-Scissors]</h1>
+        <section id="rps-game">
+          <div>
+            <h2 class="rps-info">
+              YOU:<br />
+              <span id="plr-choice">Choose...</span>
+            </h2>
+          </div>
+          <div>
+            <h2 class="rps-info">
+              Result:<br />
+              <span id="result">Win or lose?</span>
+            </h2>
+          </div>
+          <div>
+            <h2 class="rps-info">
+              CPU Choice:<br />
+              <span id="cpu-choice">Try me!</span>
+            </h2>
+          </div>
+        </section>
+        <nav class="rps-choices-box">
+          <button id="rock" class="rps-buttons">
+            <img src="img/rock.png" width="50%" height="50%" />
+          </button>
+          <button id="paper" class="rps-buttons">
+            <img src="img/paper.png" width="50%" height="50%" />
+          </button>
+          <button id="scissors" class="rps-buttons">
+            <img src="img/scissor.png" width="50%" height="50%" />
+          </button>
+        </nav>
+      </article>
+
+      <hr id="memory-anchor" />
+
+      <!------------------------------------->
+      <!------------ MEMORY GAME ------------>
+      <!------------------------------------->
+
+      <section class="game-box">
+        <h1>[Memory Game]</h1>
+
+        <h2>Score: <span id="mem-result"></span></h2>
+
+        <div id="grid"></div>
+      </section>
+
+      <hr id="whac-anchor" />
+
+      <!------------------------------------->
+      <!------------ WHAC-A-MOLE ------------>
+      <!------------------------------------->
+      <section class="game-box">
+        <h1>[Whac-a-Mole]</h1>
+
+        <h2>Score:</h2>
+        <h2 id="whac-score">0</h2>
+        <h2>Time left:</h2>
+        <h2 id="whac-timer">60</h2>
+
+        <div class="whac-grid">
+          <div class="whac-square" id="1"></div>
+          <div class="whac-square" id="2"></div>
+          <div class="whac-square" id="3"></div>
+          <div class="whac-square" id="4"></div>
+          <div class="whac-square" id="5"></div>
+          <div class="whac-square" id="6"></div>
+          <div class="whac-square" id="7"></div>
+          <div class="whac-square" id="8"></div>
+          <div class="whac-square" id="9"></div>
+        </div>
+      </section>
+    </main>
+    <script src="memory-game.js" charset="utf-8"></script>
+    <script src="rps-game.js" charset="utf-8"></script>
+    <script src="whacamole.js" charset="utf-8"></script>
+  </body>
+</html>
