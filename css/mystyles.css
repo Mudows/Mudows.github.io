@@ -24,7 +24,7 @@
 body {
   margin: 0px;
   color: #273c2c;
-  background-image: linear-gradient(to bottom right, #e8f0ff, #dc9e82);
+  background-image: linear-gradient(to bottom right, rgba(153, 102, 204, 0.548), whitesmoke , lightblue);
   font-family: "Alegreya", serif;
 }
 
