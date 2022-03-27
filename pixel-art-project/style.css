@@ -1,4 +1,14 @@
-.main-container {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  width: 99%;
+  height: 100%;
+  background: #4B4848;
+  font-family: "VT323", monospace;
+}
+
+.main-container, #board-control {
   /* width: 100vw; */
   display: flex;
   flex-direction: row;
@@ -8,25 +18,36 @@
 
 h1 {
   text-align: center;
+  font-weight: normal;
+  font-size: 42pt;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-shadow: 3px 3px 9px black, 0px 0px 3px white;
 }
 
-#color-palette, nav {
+#color-palette, #f-color-palette {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.color {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-  border: 1px solid black;
+.color, .f-color {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 7px;
+  border: 3px solid;
+}
+
+.color:hover, .f-color:hover {
+  box-shadow: 0px 0px 20px black;
 }
 
 #pixel-board {
   background-color: white;
+  border: 1px solid black;
   width: 210px;
   height: 210px;
   display: flex;
@@ -40,11 +61,54 @@ h1 {
   background-color: white;
   width: 40px;
   height: 40px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
 }
 
-button {
+button, input {
     margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 6px;
+    font-family: 'Ubuntu Mono', monospace;
+    transition-duration: 0.4s;
+}
+
+#generate-board {
+  background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, purple);
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  margin-left: -4px;
+  cursor: pointer;
+}
+
+#generate-board:hover {
+  box-shadow: 1px 1px 6px black;
+}
+
+#clear-board {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#clear-board:hover {
+  box-shadow: 1px 1px 6px black;
+  background-color: white;
+  color: black;
+}
+
+#disclaimer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+  font-size: normal;
+}
+
+a {
+  color: #26B26D;
 }
