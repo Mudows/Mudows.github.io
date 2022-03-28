@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+    margin: 5px;
+}
+
+h1 {
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Hurricane', cursive;
+  font-weight: normal;
+  font-size: 54px;
+}
+
+h2 {
+  font-size: medium;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+ol {
+  background-color: darksalmon;
+  border-radius: 5px;
+  padding: 20px;
+  padding-left: 30px;
+  width: 250px;
+}
+
+li {
+  font-family: 'Satisfy', cursive;
+  font-size: 21px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-wrap: break-word;
+}

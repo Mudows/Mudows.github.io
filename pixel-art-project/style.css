@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
-  width: 99%;
+  width: 100%;
   height: 100%;
   background: #4B4848;
   font-family: "VT323", monospace;
+  margin: 0px;
 }
 
 .main-container, #board-control {
@@ -106,7 +107,10 @@ button, input {
   margin-bottom: 0px;
   text-align: center;
   color: white;
-  font-size: normal;
+  font-size: small;
+  font-family: 'Ubuntu Mono', monospace;
+  width: 100%;
+  background-color: black;
 }
 
 a {
