@@ -2,13 +2,13 @@
 
 const stdPalette = document.querySelectorAll(".f-color");
 const stdColors = [
+  "white",
   "red",
   "orange",
   "yellow",
   "green",
   "blue",
   "purple",
-  "white",
 ];
 
 for (let i = 0; i < stdPalette.length; i += 1) {
