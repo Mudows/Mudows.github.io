@@ -1,14 +1,15 @@
+// CARREGANDO LISTA SALVA EM LOCALSTORAGE
 window.onload = function () {
   if (localStorage.length > 0) {
     const taskList = document.getElementById('lista-tarefas');
     taskList.innerHTML = localStorage.getItem('list');
     const listItems = document.getElementsByTagName('li');
-    for (let i = 0; i < listItems.length; i += 1){
+    for (let i = 0; i < listItems.length; i += 1) {
       listItems[i].addEventListener('click', selectTask);
       listItems[i].addEventListener('dblclick', taskComplete);
     }
-  };
-}
+  }
+};
 
 // ADICIONA O EVENTO DE ADICIONAR TAREFA (addTask) AO BOTÃO DE CRIAR TAREFA.
 document.getElementById('criar-tarefa').addEventListener('click', addTask);
@@ -78,14 +79,6 @@ function saveList() {
   const listToSave = document.getElementById('lista-tarefas');
   localStorage.setItem('list', listToSave.innerHTML);
 }
-
-// function saveList() {
-//   const listToSave = document.getElementsByTagName('li');
-//   for (let i = 0; i < listToSave.length; i += 1) {
-//     localStorage.setItem('item' + i, listToSave[i].innerText);
-//     localStorage.setItem('class' + i, listToSave[i].classList);
-//   }
-// }
 
 // BOTÕES DE MOVER ITENS DA LISTA
 document.getElementById('mover-cima').addEventListener('click', moveItemUp);

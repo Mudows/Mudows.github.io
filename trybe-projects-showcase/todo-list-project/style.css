@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.aside-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  width: 100%;
+  padding-left: 2em;
+}
+
+.aside-left div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.aside-left div button {
+  max-width: 12em;
+  width: 100%;
+  margin: 0.3em;
+}
+
+.aside-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+  max-width: 75%;
+  width: 100%;
+}
+
+/* button {
+  margin: 5px;
+} */
+
+h1 {
+  /* margin-bottom: 0px; */
+  text-align: center;
+  font-family: 'Hurricane', cursive;
+  font-weight: normal !important;
+  /* font-size: 54px; */
+}
+
+h2 {
+  /* font-size: medium;
+  margin-top: 0px; */
+  text-align: center;
+  font-weight: normal !important;
+  font-style: italic !important;
+  color: gray !important;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+ol {
+  background-color: darksalmon;
+  border-radius: 5px;
+  padding: 20px;
+  padding-left: 30px;
+  width: 20em;
+}
+
+li {
+  font-family: 'Satisfy', cursive;
+  font-size: 21px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-wrap: break-word;
+}

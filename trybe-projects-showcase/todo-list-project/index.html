@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <!-- Ligando o Bulma CSS ao site -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="node_modules/bulma/css/bulma.css?ts=<?= time() ?"
+    />
+    <!-- Arquivo CSS padrão do site -->
+    <link rel="stylesheet" type="text/css" href="style.css?ts=<?= time() ?" />
+  </head>
+  <body>
+    <header class="content">
+      <h1 class="title is-1">Minha Lista de Tarefas</h1>
+      <h2 id="funcionamento" class="subtitle is-6">
+        Clique duas vezes em um item para marcá-lo como completo
+      </h2>
+    </header>
+    <main class="content">
+      <section class="main-container">
+        <section class="aside-left">
+          <input
+            id="texto-tarefa"
+            class="input is-primary is-rounded"
+            type="text"
+            placeholder="Digite a tarefa aqui."
+          />
+          <div>
+            <button id="criar-tarefa" class="button is-primary">
+              Criar Tarefa
+            </button>
+            <button id="salvar-tarefas" class="button is-success">
+              Salvar Lista
+            </button>
+            <button id="remover-finalizados" class="button is-warning">
+              Limpar Finalizados
+            </button>
+            <button id="remover-selecionado" class="button is-dark">
+              Remover Selecionado
+            </button>
+            <button id="apaga-tudo" class="button is-danger is-outlined">
+              Limpar Lista
+            </button>
+          </div>
+        </section>
+        <section class="aside-right">
+          <div>
+          <button id="mover-cima" class="button is-dark">∧</button>
+          <button id="mover-baixo" class="button is-dark">∨</button>
+        </div>
+          <ol id="lista-tarefas"></ol>
+        </section>
+      </section>
+    </main>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
