@@ -138,8 +138,8 @@ hr {
   box-shadow: 3px 3px 8px black;
 }
 
-.rps-rock {
-  background-image: "img/rock.png";
+.btn-img {
+  width: 50%;
 }
 
 /************** MEMORY GAME ***************/
