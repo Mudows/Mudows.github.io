@@ -1,10 +1,23 @@
-.header {
+header {
   display: flex;
+  flex-direction: row;
   background-color: rgb(50, 167, 145);
+  justify-content: center;
+  width: 100vw;
+}
+
+.trybewarts-header-logo {
+  max-width: 8%;
+  align-self: flex-start;
+}
+
+h1 {
+  align-self: center;
 }
 
 .trybewarts-login {
   display: flex;
+  flex-direction: column;
   align-self: center;
 }
 
