@@ -42,8 +42,10 @@ function selectTask(event) {
   const nTasks = document.getElementsByTagName('li');
   for (let i = 0; i < nTasks.length; i += 1) {
     nTasks[i].style.backgroundColor = '';
+    nTasks[i].style.color = '';
   }
   event.target.style.backgroundColor = 'gray';
+  event.target.style.color = 'white';
 }
 
 // FUNÇÃO QUE RISCA A TAREFA MARCANDO-A COMO COMPLETA, OU DESMARCA.
