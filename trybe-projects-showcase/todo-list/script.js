@@ -13,11 +13,15 @@ window.onload = function () {
 
 // ADICIONA O EVENTO DE ADICIONAR TAREFA (addTask) AO BOTÃO DE CRIAR TAREFA.
 document.getElementById('criar-tarefa').addEventListener('click', addTask);
+document.getElementById('texto-tarefa').addEventListener('keydown', (event) => {
+  const key = event.code;
+  if (key === 'Enter') addTask();
+});
 
 // ADICIONA UMA NOVA TAREFA À LISTA.
 function addTask() {
   const taskList = document.getElementById('lista-tarefas');
-  let inputContent = document.getElementById('texto-tarefa').value;
+  const inputContent = document.getElementById('texto-tarefa').value;
   const createTaskItem = document.createElement('li');
 
   // Se o campo estiver vazio, retorna uma mensagem de erro.
@@ -66,7 +70,7 @@ document
   .addEventListener('click', clearCompleted);
 
 function clearCompleted(event) {
-  let toRemove = document.getElementsByClassName('completed');
+  const toRemove = document.getElementsByClassName('completed');
   while (toRemove.length > 0) {
     toRemove[0].remove();
   }
@@ -86,8 +90,8 @@ document.getElementById('mover-baixo').addEventListener('click', moveItemDown);
 
 // Move item selecionado para cima.
 function moveItemUp() {
-  let mainList = document.getElementById('lista-tarefas');
-  let listItens = mainList.getElementsByTagName('li');
+  const mainList = document.getElementById('lista-tarefas');
+  const listItens = mainList.getElementsByTagName('li');
   for (let i = 1; i < listItens.length; i += 1) {
     if (listItens[i].style.backgroundColor === 'gray') {
       mainList.insertBefore(listItens[i], listItens[i - 1]);
@@ -98,8 +102,8 @@ function moveItemUp() {
 
 // Move item selecionado para baixo.
 function moveItemDown() {
-  let mainList = document.getElementById('lista-tarefas');
-  let listItens = mainList.getElementsByTagName('li');
+  const mainList = document.getElementById('lista-tarefas');
+  const listItens = mainList.getElementsByTagName('li');
   for (let i = 0; i < listItens.length - 1; i += 1) {
     if (listItens[i].style.backgroundColor === 'gray') {
       mainList.insertBefore(listItens[i + 1], listItens[i]);
