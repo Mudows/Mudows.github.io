@@ -4,223 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <!--CARREGANDO ARQUIVOS CSS-->
+    <!-- BOOTSTRAP -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
-      href="css/mystyles.css?ts=<?= time() ?>"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
     />
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/5bcf78eb73.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/mystyles.css?ts=<?= time() ?" />
+    <title>DMC Landing Page</title>
   </head>
-
-  <body>
-    <!--Toca a música de fundo-->
-    <embed
-      src="bgm/SSA-Lobby.mp3"
-      loop="true"
-      autostart="true"
-      width="2"
-      height="0"
-    />
-    <main class="container">
-      <!--Container principal da página-->
-      <p class="small-link">
-        <a class="back" href="www.google.com">www.google.com</a>
-      </p>
-      <!------------------------------------------->
-      <!--Cabeçalho da página com o nome e a foto-->
-      <!------------------------------------------->
-      <header>
-        <h1 id="lindo">&#9733; Diego M. Cezar &#9733;</h1>
-        <h3>Game Designer | Full-stack Web Developer Student</h3>
-      </header>
-      <div class="sub-container">
-        <div>
-          <center><img class="simbolo" src="img/sigPort.png" /></center>
+  <body class="container-fluid w-75 container-format rounded-3">
+    <audio src="/bgm/SSA-Lobby.mp3" loop autoplay></audio>
+    <div class="row overflowy">
+      <div id="colunm-left" class="w-50">
+        <div class="top-contact-bar">
+          <p class="text-center">
+            <a href="https://github.com/Mudows" target="_blank"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            |
+            <a
+              href="https://www.linkedin.com/in/diego-moraes-cezar-2b1b8076/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+            | <i class="fa-solid fa-envelope"></i> dmcezar@gmail.com
+          </p>
         </div>
-        <div>
-          <img class="lindo" src="img/eu.jpg" width="400" height="300" />
+        <br />
+        <h5>
+          Olá! Eu sou <span class="text-danger">Diego M. Cezar</span> e sou um
+        </h5>
+        <h1 class="text-primary">Desenvolvedor Web Front-end</h1>
+        <div class="">
+          <p>
+            Residente no Rio de Janeiro (RJ), trabalhei por 5 anos na IBM na área
+            de Reporting (Assistente Administrativo), cursei Game Development
+            (Seven Game) e Game Design (SENAC) e sou apaixonado por desenvolver
+            jogos. Atualmente sou estudante de Desenvolvimento Web Full-Stack na Trybe, mas meu foco atual é o desenvolvimento front-end de web sites e landing pages.
+          </p>
         </div>
-        <div>
-          <center><img class="simbolo" src="img/sigPort.png" /></center>
+        <!-- <div class="text-center spacing">
+          <img class="stack" src="/img/stack_icons/bootstrap.svg" />
+          <img class="stack" src="/img/stack_icons/css3.svg" />
+          <img class="stack" src="/img/stack_icons/javascript.svg" />
+          <img class="stack" src="/img/stack_icons/jest.svg" />
+          <img class="stack" src="/img/stack_icons/jquery.svg" />
+          <img class="stack" src="/img/stack_icons/react.svg" />
+        </div> -->
+        <br />
+        <div class="text-center form-box">
+          <h6>
+            Infelizmente estou <span class="text-danger">indisponível</span> para novos projetos no momento.<br />Quer
+            ser o primeiro a saber quando estarei disponível?<br />Só informar o
+            seu e-mail abaixo.
+          </h6>
+          <br />
+          <form class="row">
+            <div class="col-md-9">
+              <input
+                type="email"
+                class="form-control"
+                name="client-email"
+                id="client-email"
+                placeholder="seuEmail@aqui.com"
+              />
+            </div>
+            <div class="col-md-3">
+              <button
+                id="submit-button"
+                class="btn btn-secondary"
+                type="submit"
+                disabled
+              >
+              <i class="fa-solid fa-paper-plane"></i> Enviar
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-      <div>
-        <br />
-        <br />
-        <!----------------------------------->
-        <!-- Barra de navegação da página. -->
-        <!----------------------------------->
-        <table>
-          <tr>
-            <td align="center" width="200" class="navButton">
-              <a href="#sobre">Quem sou eu?</a>
-            </td>
-            <td align="center" width="200" class="navButton">
-              <a href="#habilidades">Minhas Habilidades</a>
-            </td>
-            <td align="center" width="200" class="navButton">
-              <a href="#contato">Contato</a>
-            </td>
-            <td align="center" width="200" class="navButton">
-              <a href="#blogs">Blogs que gosto</a>
-            </td>
-          </tr>
-        </table>
+      <div id="colunm-right" class="w-50">
+        <div id="photo-frame" class="photo-frame">
+          <img src="./img/eu.jpg" alt="Diego M. Cezar" />
+        </div>
+        <div class="text-center">
+          <img class="stack" src="/img/stack_icons/bootstrap.svg" />
+          <img class="stack" src="/img/stack_icons/css3.svg" />
+          <img class="stack" src="/img/stack_icons/javascript.svg" />
+          <img class="stack" src="/img/stack_icons/jest.svg" />
+          <img class="stack" src="/img/stack_icons/jquery.svg" />
+          <img class="stack" src="/img/stack_icons/react.svg" />
+        </div>
       </div>
-      <br />
-      <hr />
-      <br />
-      <!------------------------>
-      <!--Blodo do "Sobre Mim"-->
-      <!------------------------>
-      <table>
-        <tr>
-          <td width="30%">
-            <img
-              title="'Who' by Olena Panasovska from NounProject.com"
-              class="section-imgs"
-              src="img/who.png"
-            />
-          </td>
-          <td>
-            <div class="box" id="sobre">
-              <br />
-              <h2>&#8225; Quem sou eu? &#8225;</h2>
-              <p>
-                Estudante de Web Dev Full-stack na Trybe<br />
-                Game Designer (Seven Game/SENAC)<br />
-                Residente do Rio de Janeiro - RJ<br />
-                RPGista de coração<br />
-                Pai e marido apaixonado<br /><br />
-                <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
-              </p>
-            </div>
-          </td>
-          <td width="30%"></td>
-        </tr>
-      </table>
-
-      <br />
-      <hr />
-      <br />
-      <!---------------------------------->
-      <!--Bloco das "Minhas Habilidades"-->
-      <!---------------------------------->
-      <table>
-        <tr>
-          <td width="30%"></td>
-          <td>
-            <div class="box" id="habilidades">
-              <br />
-              <h2>&#8225; Minhas Habilidades &#8225;</h2>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Bootstrap</li>
-                <li>Game Design</li>
-              </ul>
-              <p>
-                <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
-              </p>
-            </div>
-          </td>
-          <td width="30%">
-            <img
-              title="'Skills' by Eucalyp from NounProject.com"
-              class="section-imgs"
-              src="img/skills.png"
-            />
-          </td>
-        </tr>
-      </table>
-      <br />
-      <hr />
-      <br />
-      <!------------------------------>
-      <!--Bloco da lista de contatos-->
-      <!------------------------------>
-      <table>
-        <tr>
-          <td width="30%">
-            <img
-            title="'Contact' by Nhor from NounProject.com"
-            class="section-imgs"
-            src="img/contact.png"
-          />
-        </td>
-          <td>
-            <div class="box" id="contato">
-              <br>
-              <h2>&#8225; Contato &#8225;</h2>
-              <p>
-                (21) 9xxxx-xxxx<br />
-                meuEmail@provedor.com<br />
-                <a
-                  class="back"
-                  href="https://www.linkedin.com/in/diego-moraes-cezar-2b1b8076/"
-                  >LinkedIn</a
-                ><br /><br /><br /><br />
-                <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
-              </p>
-            </div>
-          </td>
-          <td width="30%"></td>
-        </tr>
-      </table>
-      <br />
-      <hr />
-      <br />
-      <!---------------------------->
-      <!--Bloco dos links externos-->
-      <!---------------------------->
-      <table>
-        <tr>
-          <td width="30%"></td>
-          <td>
-            <div class="box" id="blogs">
-              <br>
-              <h2>&#8225; Blogs que Gosto &#8225;</h2>
-              <p>
-                <br />
-                <a
-                  class="back"
-                  href="https://www.ahnegao.com.br/"
-                  target="_blank"
-                  >Ah Negão</a
-                >
-                <br />
-                <a class="back" href="https://blog.betrybe.com/" target="_blank"
-                  >Blog da Trybe</a
-                >
-                <br />
-                <a
-                  class="back"
-                  href="https://www.sensacionalista.com.br/"
-                  target="_blank"
-                  >Sensacionalista</a
-                >
-                <br />
-                <br />
-                <br />
-                <a class="back" href="#lindo">&#9650; Voltar &#9650;</a>
-              </p>
-            </div>
-          </td>
-          <td width="30%">
-            <img
-              title="'Blog' by mynamepong from NounProject.com"
-              class="section-imgs"
-              src="img/blogs.png"
-            />
-          </td>
-        </tr>
-      </table>
-      <br />
-      <br />
-    </main>
+    </div>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

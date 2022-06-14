@@ -1,170 +1,66 @@
-/************************************************/
-/********* Importando Fonts do Google ***********/
-/************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
-
-/************************************************/
-/* FORMATAÇÃO GERAL (afeta todos os elementos). */
-/************************************************/
-
-/* *{
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
-} */
-
-/************************************************/
-/************** FORMATAÇÃO DE TAGS **************/
-/************************************************/
+html {
+  background-color: #dcd0c0;
+}
 
 body {
-  margin: 0px;
-  color: #273c2c;
-  background-image: linear-gradient(to bottom right, rgba(153, 102, 204, 0.548), whitesmoke , lightblue);
-  font-family: "Alegreya", serif;
+  color: #373737;
+  background-color: whitesmoke;
+  font-family: 'Titillium Web', sans-serif;
+  box-shadow: 0px 0px 30px 1px black;
 }
 
-h1{
-  font-family: 'Cinzel', serif;
-  font-size: 56px;
-  color: #273c2c;
-  text-align: center;
-  font-weight: normal;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  padding: 0px;
-  margin-bottom: 0px;
+h1 {
+  font-family: 'Kanit', sans-serif; 
+  font-size: 34pt;
+  text-shadow: -2px 1px 1px #ffa07a, 2px -1px 1px #fdfd96;
 }
 
-h2{
-  color: #e8f0ff;
-  text-align: center;
-  text-shadow: 2px 2px 2px rgba(184, 206, 239, 0.4);
+p {
+  text-align: justify;
 }
 
-h3{
-  text-align: center;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  font-size: small;
-  font-family: 'Cinzel', serif;
-  font-weight: normal;
-  font-style: italic;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 50px;
+form {
+  margin-bottom: 0.8em;
 }
 
-a{
-  text-decoration: none;
-  color: #dc9e82;
-  font-weight: bold;
-  transition-duration: 0.4s;
+img {
+  width: auto;
+  height: 100%;
 }
 
-a:hover{
-  background-color: #dc9e82;
-  color: #273c2c;
+.container-format {
+  background-color: #f4f4f4;
+  margin-top: 0.8em;
 }
 
-p, ul{
-  color: #e8f0ff;
-  font-size: large;
-  text-align: center;
+.stack {
+  width: 9%;
+  margin: 2em 1em;
 }
 
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.top-contact-bar {
+  background-color: #dcd0c0;
+  border-radius: 0px 0px 30px 30px;
 }
 
-hr{
-  border: 2px dashed rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  width: 50vw;
+.photo-frame {
+  border-radius: 0px 30px 0px 300px;
+  overflow: hidden;
+  margin-right: -20px;
+  height: 80%;
+  /* background: linear-gradient(to top right, transparent, transparent, #f4f4f4), url('/img/eu.jpg'); */
 }
 
-/************************************************/
-/******************* CLASSES ********************/
-/************************************************/
-
-/* >>>>>>> Containers e Box em geral <<<<<<< */
-
-.container {
-  width: 100vw;
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.form-box {
+  padding: 0.7em;
+  background-color: #dcd0c0;
+  border-radius: 30px 5px 30px 5px;
+  margin-bottom: 1em;
 }
 
-.sub-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.box {
-  border-radius: 75px;
-  width: 500px;
-  height: 300px;
-  background: #273c2c;
-  opacity: 0.8;
-  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.9);
-}
-
-/* >>>>>>> Navegação e Links <<<<<<< */
-
-.navButton{
-    border-radius: 25px;
-    border: 3px solid #031a6b;
-    background-color: #031a6b;
-    text-decoration: none;
-    font-size: large;
-    transition-duration: 0.4s;
-}
-
-.navButton:hover{
-  border: 3px solid #dc9e82;
-}
-
-.navButton:hover a{
-  background-color: transparent;
-  color: #dc9e82;
-}
-
-.small-link{
-  color: #031a6b;
-  font-size: 10px;
-  font-style: italic;
-  text-align: left;
-}
-
-/* >>>>>>> Controle de Imagens <<<<<<< */
-
-.simbolo{
-  width: 50%;
-  height: 50%;
-  opacity: 0.1;
-}
-
-.lindo {
-  border-radius: 200px;
-  width: 400px;  
-  height: 300px;
-  box-shadow: 0 5px 10px rgba(184, 206, 239, 0.9);
-}
-
-.section-imgs{
-  width: 65%;
-  height: 65%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;;
-  opacity: 0.2;
+.overflowy {
+  overflow: hidden;
 }
