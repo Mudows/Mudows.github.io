@@ -31,13 +31,17 @@ img {
   height: 100%;
 }
 
+button {
+  transition-duration: 0.4s;
+}
+
 .container-format {
   background-color: #f4f4f4;
   margin-top: 0.8em;
 }
 
 .stack {
-  width: 9%;
+  width: 7%;
   margin: 2em 1em;
 }
 
