@@ -1,17 +1,14 @@
 const validateEmailInput = () => {
-  const submitButton = document.getElementById('submit-button');
-  const clientEmail = document.querySelector('#client-email').value;
+  const clientEmail = $('#client-email').val();
   const emailValidation = /\S+@\S+\.\S+/;
   if (emailValidation.test(clientEmail)) {
-    submitButton.classList.remove('btn-secondary');
-    submitButton.classList.add('btn-primary');
-    return (submitButton.disabled = false);
+    $('#submit-button').removeClass('btn-secondary');
+    $('#submit-button').addClass('btn-primary');
+    return ($('#submit-button').prop('disabled', false));
   }
-  submitButton.classList.remove('btn-primary');
-  submitButton.classList.add('btn-secondary');
-  return (submitButton.disabled = true);
+  $('#submit-button').removeClass('btn-primary');
+  $('#submit-button').addClass('btn-secondary');
+  return ($('#submit-button').prop('disabled', true));
 };
 
-document
-  .querySelector('#client-email')
-  .addEventListener('input', validateEmailInput);
+$('#client-email').on('input', validateEmailInput);
