@@ -53,13 +53,27 @@
         <h1 class="text-primary">Desenvolvedor Web Front-end</h1>
         <div class="">
           <p>
-            Residente no Rio de Janeiro (RJ), trabalhei por 5 anos na IBM na
-            área de Reporting (Assistente Administrativo), cursei Game
-            Development (Seven Game) e Game Design (SENAC) e sou apaixonado por
-            desenvolver jogos. Atualmente sou estudante de Desenvolvimento Web
-            Full-Stack na Trybe, mas meu foco atual é o desenvolvimento
-            front-end de web sites e landing pages.
+            Residente do Rio de Janeiro (RJ), atualmente estudo desenvolvimento
+            Web Full Stack na
+            <a href="https://www.betrybe.com/" target="_blank">Trybe</a>, mas já
+            trabalho com tecnologias front-end como HTML5, CSS3, JavaScript,
+            jQuery, Jest, Bootstrap, React e SASS.
           </p>
+          <p>Estes são alguns dos trabalhos que desenvolvi até o momento:</p>
+        </div>
+        <div class="text-center">
+          <a
+            href="https://mudows.github.io/todo-list-project/index.html"
+            target="_blank"
+            class="project-showcase"
+            >To Do List</a
+          >
+          <a
+            href="https://mudows.github.io/pixel-art-project/index.html"
+            target="_blank"
+            class="project-showcase"
+            >Pixel Art Maker</a
+          >
         </div>
         <!-- <div class="text-center spacing">
           <img class="stack" src="/img/stack_icons/bootstrap.svg" />
@@ -92,11 +106,73 @@
               <button
                 id="submit-button"
                 class="btn btn-secondary"
-                type="submit"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 disabled
               >
                 <i class="fa-solid fa-paper-plane"></i> Enviar
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3
+                        class="modal-title text-primary"
+                        id="exampleModalLabel"
+                      >
+                        Obrigado!
+                      </h3>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Embora esta página, assim como esta funcionalidade,
+                        ainda esteja em construção eu agradeço de coração o seu
+                        interesse.
+                      </p>
+                      <p>
+                        Em breve estarei pronto para lhe atender da melhor forma
+                        possível.
+                      </p>
+                      <p>
+                        Enquanto isso, que tal me acompanhar no
+                        <a
+                          href="https://www.linkedin.com/in/diego-moraes-cezar-2b1b8076/"
+                          target="_blank"
+                          class="modal-link"
+                          ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+                        >
+                        ou dar uma espiadinha nos meus projetos no
+                        <a
+                          href="https://github.com/Mudows"
+                          target="_blank"
+                          class="modal-link"
+                          ><i class="fa-brands fa-github"></i> GitHub</a
+                        >?
+                      </p>
+                      <p>Até!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fim do Modal -->
             </div>
           </form>
         </div>
@@ -110,50 +186,54 @@
             href="https://www.flaticon.com/free-icons/bootstrap"
             title="Bootstrap icons created by Freepik - Flaticon"
           >
-            <img class="stack" src="/img/stack_icons/bootstrap.png"
+            <img
+              class="stack"
+              src="/img/stack_icons/bootstrap.png"
+              alt="Bootstrap"
           /></a>
           <a
             href="https://www.flaticon.com/free-icons/css"
             title="Css icons created by Pixel perfect - Flaticon"
           >
-            <img class="stack" src="/img/stack_icons/css-3.png"
+            <img class="stack" src="/img/stack_icons/css-3.png" alt="CSS3"
           /></a>
           <a
             href="https://www.flaticon.com/free-icons/javascript"
             title="Javascript icons created by Freepik - Flaticon"
             target="_blank"
           >
-            <img class="stack" src="/img/stack_icons/js.png"
+            <img class="stack" src="/img/stack_icons/js.png" alt="JavaScript"
           /></a>
           <a
             href="https://iconscout.com/contributors/icon-54"
             title="Jest Icon by Icon 54 on IconScout"
             target="_blank"
           >
-            <img class="stack" src="/img/stack_icons/jest.png"
+            <img class="stack" src="/img/stack_icons/jest.png" alt="Jest"
           /></a>
           <a
             href="https://iconscout.com/contributors/icon-mafia"
             title="Jquery Icon by Icon Mafia on IconScout"
             target="_blank"
           >
-            <img class="stack" src="/img/stack_icons/jquery.png"
+            <img class="stack" src="/img/stack_icons/jquery.png" alt="jQuery"
           /></a>
           <a
             href="https://www.flaticon.com/free-icons/react"
             title="React icons created by Freepik - Flaticon"
           >
-            <img class="stack" src="/img/stack_icons/react.png"
+            <img class="stack" src="/img/stack_icons/react.png" alt="React"
           /></a>
           <a
             href="https://www.flaticon.com/free-icons/sass"
             title="Sass icons created by Freepik - Flaticon"
           >
-            <img class="stack" src="/img/stack_icons/sass.png"
+            <img class="stack" src="/img/stack_icons/sass.png" alt="SASS"
           /></a>
         </div>
       </div>
     </div>
+
     <script src="/scripts/script.js"></script>
   </body>
 </html>
