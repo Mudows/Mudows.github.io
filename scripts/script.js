@@ -16,3 +16,10 @@ const validateEmailInput = () => {
 };
 
 $('#client-email').on('input', validateEmailInput);
+
+const onEmailSubmit = () => {
+  $('#client-email').val('');
+  return;
+}
+
+$('#submit-button').on('click', onEmailSubmit);

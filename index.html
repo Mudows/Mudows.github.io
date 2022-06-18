@@ -29,8 +29,8 @@
     <title>DMC Landing Page</title>
   </head>
   <body class="container-fluid w-75 container-format rounded-3">
-    <audio src="/bgm/SSA-Lobby.mp3" loop autoplay></audio>
-    <div class="row overflowy">
+    <audio src="/bgm/Stars Align - The 126ers.mp3" loop autoplay></audio>
+    <div class="row overflow-hidden">
       <div id="colunm-left" class="w-50">
         <div class="top-contact-bar">
           <p class="text-center">
@@ -43,7 +43,7 @@
               target="_blank"
               ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
             >
-            | <i class="fa-solid fa-envelope"></i> dmcezar@gmail.com
+            | <i class="fa-solid fa-envelope"></i> darkspotsgs@gmail.com
           </p>
         </div>
         <br />
@@ -61,28 +61,55 @@
           </p>
           <p>Estes são alguns dos trabalhos que desenvolvi até o momento:</p>
         </div>
-        <div class="text-center">
+        <div class="row w-100">
+          <div class="project-box">
           <a
             href="https://mudows.github.io/todo-list-project/index.html"
             target="_blank"
-            class="project-showcase"
-            >To Do List</a
+            class="project-links"
+            ><i class="fa-solid fa-list-check"></i> To Do List</a
           >
+        </div>
+        <div class="project-box">
           <a
             href="https://mudows.github.io/pixel-art-project/index.html"
             target="_blank"
-            class="project-showcase"
-            >Pixel Art Maker</a
+            class="project-links"
+            ><i class="fa-solid fa-border-all"></i> Pixel Art Maker</a
           >
         </div>
-        <!-- <div class="text-center spacing">
-          <img class="stack" src="/img/stack_icons/bootstrap.svg" />
-          <img class="stack" src="/img/stack_icons/css3.svg" />
-          <img class="stack" src="/img/stack_icons/javascript.svg" />
-          <img class="stack" src="/img/stack_icons/jest.svg" />
-          <img class="stack" src="/img/stack_icons/jquery.svg" />
-          <img class="stack" src="/img/stack_icons/react.svg" />
-        </div> -->
+        <div class="project-box">
+          <a
+            href="https://mudows.github.io/simple-games/"
+            target="_blank"
+            class="project-links"
+            ><i class="fa-solid fa-gamepad"></i> Simple Games</a
+          >
+        </div>
+        <div class="project-box">
+          <a
+            href="#"
+            class="project-links disabled"
+            title="Disponível em breve"
+            ><i class="fa-solid fa-copy"></i> Super Trunfo</a
+          >
+        </div>
+        <div class="project-box">
+          <a
+            href="#"
+            class="project-links disabled"
+            title="Disponível em breve"
+            ><i class="fa-solid fa-face-grin-tongue-wink"></i> Gerador de Memes</a
+          ></div>
+          <div class="project-box">
+            <a
+              href="#"
+              class="project-links disabled"
+              title="Disponível em breve"
+              ><i class="fa-solid fa-music"></i></i> Tunes</a
+            ></div>
+          
+        </div>
         <br />
         <div class="text-center form-box">
           <h6>
@@ -125,12 +152,12 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h3
+                      <h1
                         class="modal-title text-primary"
                         id="exampleModalLabel"
                       >
                         Obrigado!
-                      </h3>
+                      </h1>
                     </div>
                     <div class="modal-body">
                       <p>
@@ -181,56 +208,43 @@
         <div id="photo-frame" class="photo-frame">
           <img src="./img/eu.jpg" alt="Diego M. Cezar" />
         </div>
-        <div class="text-center">
-          <a
-            href="https://www.flaticon.com/free-icons/bootstrap"
-            title="Bootstrap icons created by Freepik - Flaticon"
-          >
+        <div class="text-center stack-box">
+          <a href="https://getbootstrap.com/" title="Bootstrap">
             <img
               class="stack"
               src="/img/stack_icons/bootstrap.png"
               alt="Bootstrap"
           /></a>
-          <a
-            href="https://www.flaticon.com/free-icons/css"
-            title="Css icons created by Pixel perfect - Flaticon"
-          >
+          <a href="https://www.w3.org/TR/CSS/#intro" title="CSS3">
             <img class="stack" src="/img/stack_icons/css-3.png" alt="CSS3"
           /></a>
+          <a href="https://git-scm.com/" title="Git">
+            <img class="stack" src="/img/stack_icons/git.png" alt="Git"
+          /></a>
           <a
-            href="https://www.flaticon.com/free-icons/javascript"
-            title="Javascript icons created by Freepik - Flaticon"
+            href="https://www.javascript.com/"
+            title="Javascript"
             target="_blank"
           >
             <img class="stack" src="/img/stack_icons/js.png" alt="JavaScript"
           /></a>
-          <a
-            href="https://iconscout.com/contributors/icon-54"
-            title="Jest Icon by Icon 54 on IconScout"
-            target="_blank"
-          >
+          <a href="https://jestjs.io/" title="Jest" target="_blank">
             <img class="stack" src="/img/stack_icons/jest.png" alt="Jest"
           /></a>
-          <a
-            href="https://iconscout.com/contributors/icon-mafia"
-            title="Jquery Icon by Icon Mafia on IconScout"
-            target="_blank"
-          >
+          <a href="https://jquery.com/" title="jQuery" target="_blank">
             <img class="stack" src="/img/stack_icons/jquery.png" alt="jQuery"
           /></a>
-          <a
-            href="https://www.flaticon.com/free-icons/react"
-            title="React icons created by Freepik - Flaticon"
-          >
+          <a href="https://reactjs.org/" title="React">
             <img class="stack" src="/img/stack_icons/react.png" alt="React"
           /></a>
-          <a
-            href="https://www.flaticon.com/free-icons/sass"
-            title="Sass icons created by Freepik - Flaticon"
-          >
-            <img class="stack" src="/img/stack_icons/sass.png" alt="SASS"
+          <a href="https://sass-lang.com/" title="Sass">
+            <img class="stack" src="/img/stack_icons/sass.png" alt="Sass"
           /></a>
         </div>
+      </div>
+      <div id="attrb" class="page-footer">
+        Ícones retirados de <a href="https://iconscout.com/">IconScout</a> e
+        <a href="https://www.flaticon.com/">Flaticon</a>. | Site desenvolvido usando Bootstrap, jQuery e <span style="color: #fd3a4a;"><i class="fa-solid fa-heart"></i></span>.
       </div>
     </div>
 
