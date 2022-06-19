@@ -22,7 +22,7 @@ const myProjects = [
     available: true,
     icon: '<i class="fa-solid fa-gamepad"></i><br>',
     id: 'project-3',
-    url: '#',
+    url: 'https://mudows.github.io/simple-games/',
     techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/css3.svg'],
   },
   {
@@ -81,9 +81,14 @@ window.onload = myProjects.map((project) => {
   if (!project.available) {
     $(cardId)
       .addClass('disabled')
-      .attr('title', 'Em breve');
-  }
+      .attr('title', 'Em breve')
+      .attr('target', '');
+  } 
 });
+
+// Sets de volume of the background music to 30%.
+/* document.getElementById('bg-music').volume = 0.3; */
+$('#bg-music')[0].volume = 0.2;
 
 const validateEmailInput = () => {
   const emailValidation = /\S+@\S+\.\S+/;
