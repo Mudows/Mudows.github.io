@@ -2,7 +2,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 html {
-  background-color: #dcd0c0;
+  /* background-color: #dcd0c0; */
+  background: linear-gradient(
+    140deg,
+    #93c572,
+    #c0b283,
+    #dcd0c0,
+    #c0b283,
+    #fd3a4a
+  );
+  background-size: 1000% 1000%;
+
+  -webkit-animation: GradientBackground 30s ease infinite;
+  -moz-animation: GradientBackground 30s ease infinite;
+  animation: GradientBackground 30s ease infinite;
+}
+
+@-webkit-keyframes GradientBackground {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes GradientBackground {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 
 body {
@@ -31,7 +78,8 @@ img {
   height: 100%;
 }
 
-button, a {
+button,
+a {
   transition-duration: 0.4s;
 }
 
@@ -66,7 +114,7 @@ a:hover {
 .project-links:hover {
   background-color: #c0b283;
   box-shadow: inset -1px 1px 3px 0px #373737;
-  color:#373737;
+  color: #373737;
 }
 
 .disabled {
@@ -88,11 +136,13 @@ a:hover {
 .stack {
   width: 8%;
   margin: 0.3em 0.5em;
+  cursor: pointer;
 }
 
 .stack-box {
   margin-top: 2em;
   margin-bottom: 2em;
+  overflow: hidden;
 }
 
 .top-contact-bar {
@@ -123,7 +173,7 @@ a:hover {
 
 /* Bootstrap override */
 .text-primary {
-  color:#93c572 !important;
+  color: #93c572 !important;
 }
 
 .text-danger {
