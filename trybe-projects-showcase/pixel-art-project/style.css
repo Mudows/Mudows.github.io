@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
   width: 100%;
   height: 100%;
-  background: #4B4848;
+  background: #4b4848;
   font-family: "VT323", monospace;
   margin: 0px;
 }
 
-.main-container, #board-control {
+.main-container,
+#board-control {
   /* width: 100vw; */
   display: flex;
   flex-direction: row;
@@ -26,14 +27,16 @@ h1 {
   text-shadow: 3px 3px 9px black, 0px 0px 3px white;
 }
 
-#color-palette, #f-color-palette {
+#color-palette,
+#f-color-palette {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.color, .f-color {
+.color,
+.f-color {
   width: 40px;
   height: 40px;
   margin-right: 5px;
@@ -42,7 +45,8 @@ h1 {
   border: 3px solid;
 }
 
-.color:hover, .f-color:hover {
+.color:hover,
+.f-color:hover {
   box-shadow: 0px 0px 20px black;
 }
 
@@ -65,20 +69,30 @@ h1 {
   border: 1px solid lightgray;
 }
 
-button, input {
-    margin-top: 15px;
-    margin-left: 8px;
-    margin-right: 8px;
-    border-radius: 10px;
-    border: 2px solid black;
-    font-size: 18px;
-    padding: 6px;
-    font-family: 'Ubuntu Mono', monospace;
-    transition-duration: 0.4s;
+button,
+input {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 18px;
+  padding: 6px;
+  font-family: "Ubuntu Mono", monospace;
+  transition-duration: 0.4s;
 }
 
 #generate-board {
-  background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, purple);
+  background-image: linear-gradient(
+    to bottom right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    purple
+  );
   color: white;
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
@@ -108,11 +122,34 @@ button, input {
   text-align: center;
   color: white;
   font-size: small;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   width: 100%;
   background-color: black;
 }
 
 a {
-  color: #26B26D;
+  color: #26b26d;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: small;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
