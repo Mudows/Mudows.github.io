@@ -6,14 +6,14 @@ const myProjects = [
     available: true,
     icon: '<i class="fa-solid fa-list-check"></i><br>',
     id: 'project-1',
-    url: 'https://mudows.github.io/todo-list-project/index.html',
+    url: 'https://mudows.github.io/trybe-projects-showcase/todo-list/',
   },
   {
     title: 'Pixel Art Maker',
     available: true,
     icon: '<i class="fa-solid fa-border-all"></i><br>',
     id: 'project-2',
-    url: 'https://mudows.github.io/pixel-art-project/index.html',
+    url: 'https://mudows.github.io/trybe-projects-showcase/pixel-art-project/',
   },
   {
     title: 'Simple Games',
@@ -51,11 +51,11 @@ const myProjects = [
     url: '#',
   },
   {
-    title: 'C&B RPG',
-    available: false,
-    icon: '<i class="fa-solid fa-dice"></i><br>',
+    title: 'Trybewarts',
+    available: true,
+    icon: '<i class="fa-brands fa-wpforms"></i><br>',
     id: 'project-8',
-    url: '#',
+    url: 'https://mudows.github.io/trybe-projects-showcase/trybewarts/',
   },
 ];
 
@@ -78,7 +78,7 @@ window.onload = myProjects.map((project) => {
   } 
 });
 
-$('#bg-music')[0].volume = 0.2; // Sets the bgMusic volume to 30%.
+$('#bg-music').prop('volume', 0.15); // Sets the volume of the bgMusic.
 
 const validateEmailInput = () => {
   const emailValidation = /\S+@\S+\.\S+/;
