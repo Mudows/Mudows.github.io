@@ -28,31 +28,31 @@
           <div>
             <h2 class="rps-info">
               YOU:<br />
-              <span id="plr-choice">Choose...</span>
+              <img src="" id="plr-choice" class="btn-img">
             </h2>
           </div>
           <div>
             <h2 class="rps-info">
-              Result:<br />
-              <span id="result">Win or lose?</span>
+              RESULT:<br />
+              <span id="result">Do you dare?</span>
             </h2>
           </div>
           <div>
             <h2 class="rps-info">
-              CPU Choice:<br />
-              <span id="cpu-choice">Try me!</span>
+              CPU:<br />
+              <img src="" id="cpu-choice" class="btn-img">
             </h2>
           </div>
         </section>
         <nav class="rps-choices-box">
-          <button id="rock" class="rps-buttons">
-            <img src="img/rock.png" width="50%" height="50%" />
+          <button class="rps-buttons">
+            <img src="img/rps/rock.png" id="rock" class="btn-img rps-p-choice" />
           </button>
-          <button id="paper" class="rps-buttons">
-            <img src="img/paper.png" width="50%" height="50%" />
+          <button class="rps-buttons">
+            <img src="img/rps/paper.png" id="paper" class="btn-img rps-p-choice" />
           </button>
-          <button id="scissors" class="rps-buttons">
-            <img src="img/scissor.png" width="50%" height="50%" />
+          <button class="rps-buttons">
+            <img src="img/rps/scissor.png" id="scissors" class="btn-img rps-p-choice" />
           </button>
         </nav>
       </article>
@@ -66,7 +66,8 @@
       <section class="game-box">
         <h1>[Memory Game]</h1>
 
-        <h2>Score: <span id="mem-result"></span></h2>
+        <h2 id="mem-timer">Tempo: 60</h2>
+        <h2 id="mem-result">Pontos: 0</h2>
 
         <div id="grid"></div>
       </section>
