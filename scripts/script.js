@@ -7,7 +7,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-list-check"></i><br>',
     id: 'project-1',
     url: 'https://mudows.github.io/todo-list-project/index.html',
-    techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/bulma.svg'],
   },
   {
     title: 'Pixel Art Maker',
@@ -15,7 +14,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-border-all"></i><br>',
     id: 'project-2',
     url: 'https://mudows.github.io/pixel-art-project/index.html',
-    techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/css3.svg'],
   },
   {
     title: 'Simple Games',
@@ -23,7 +21,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-gamepad"></i><br>',
     id: 'project-3',
     url: 'https://mudows.github.io/simple-games/',
-    techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/css3.svg'],
   },
   {
     title: 'Super Trunfo',
@@ -31,7 +28,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-copy"></i><br>',
     id: 'project-4',
     url: '#',
-    techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/css3.svg'],
   },
   {
     title: 'Meme Generator',
@@ -39,7 +35,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-face-grin-tongue-wink"></i><br>',
     id: 'project-5',
     url: '#',
-    techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/css3.svg'],
   },
   {
     title: 'Tunes',
@@ -47,7 +42,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-music"></i><br>',
     id: 'project-6',
     url: '#',
-    techs: ['/img/stack_icons/javascript.svg', '/img/stack_icons/css3.svg'],
   },
   {
     title: 'Online Store',
@@ -55,7 +49,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-store"></i><br>',
     id: 'project-7',
     url: '#',
-    techs: [],
   },
   {
     title: 'C&B RPG',
@@ -63,7 +56,6 @@ const myProjects = [
     icon: '<i class="fa-solid fa-dice"></i><br>',
     id: 'project-8',
     url: '#',
-    techs: [],
   },
 ];
 
@@ -86,9 +78,7 @@ window.onload = myProjects.map((project) => {
   } 
 });
 
-// Sets de volume of the background music to 30%.
-/* document.getElementById('bg-music').volume = 0.3; */
-$('#bg-music')[0].volume = 0.2;
+$('#bg-music')[0].volume = 0.2; // Sets the bgMusic volume to 30%.
 
 const validateEmailInput = () => {
   const emailValidation = /\S+@\S+\.\S+/;
