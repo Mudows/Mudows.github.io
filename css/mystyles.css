@@ -97,6 +97,14 @@ a:hover {
   text-shadow: -1px 1px 3px #373737;
 }
 
+.down-arrow {
+  width: 100%;
+  text-shadow: -1px 1px 3px #373737;
+  color: #c0b283;
+  font-size: 20pt;
+  text-align: end;
+}
+
 .content-block {
   margin-top: 10em;
   margin-bottom: 12em;
