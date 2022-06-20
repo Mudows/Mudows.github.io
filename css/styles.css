@@ -112,7 +112,7 @@ a:hover {
 
 /* Project List */
 .project-box {
-  width: 100%;
+  /* width: 100% */
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -231,12 +231,12 @@ a:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff773a;
+  background: #ff9657;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff9657;
+  background: #ff773a;
 }
 
 /* End of Scroll Bar Config */

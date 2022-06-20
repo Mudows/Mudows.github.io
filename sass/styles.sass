@@ -10,6 +10,11 @@ $color-text: #373737
 $color-bg: #f2f0e6
 $textShadow: -2px 1px 4px gray
 
+$aX: 0%
+$aY: 51%
+$bX: 100%
+$bY: 50%
+
 html
   background: linear-gradient(140deg, $color1, $color-bg, $color-3)
   background-size: 1000% 1000%
@@ -19,29 +24,29 @@ html
 
 @-webkit-keyframes GradientBackground
   0%
-    background-position: 0% 51%
+    background-position: $aX $aY
   50%
-    background-position: 100% 50%
+    background-position: $bX $bY
   100%
-    background-position: 0% 51%
+    background-position: $aX $aY
 
 @-moz-keyframes GradientBackground
   0%
-    background-position: 0% 51%
+    background-position: $aX $aY
   50%
-    background-position: 100% 50%
+    background-position: $bX $bY
   100%
-    background-position: 0% 51%
+    background-position: $aX $aY
 
 @keyframes GradientBackground
   0%
-    background-position: 0% 51%
+    background-position: $aX $aY
 
   50%
-    background-position: 100% 50%
+    background-position: $bX $bY
 
   100%
-    background-position: 0% 51%
+    background-position: $aX $aY
 
 body 
   color: $color-text
@@ -104,7 +109,7 @@ a:hover
 $buttonShadow: -2px 2px 3px 0px #373737
 
 .project-box
-  width: 100%
+  /* width: 100% */
   height: auto
   margin-left: auto
   margin-right: auto
@@ -211,10 +216,10 @@ $buttonShadow: -2px 2px 3px 0px #373737
 
 /* Handle */
 ::-webkit-scrollbar-thumb
-  background: $color-3
+  background: $color3Lighter
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover
-  background: $color3Lighter
+  background: $color-3
 
 /* End of Scroll Bar Config */
