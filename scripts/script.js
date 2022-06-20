@@ -58,24 +58,76 @@ const myProjects = [
     url: 'https://mudows.github.io/trybe-projects-showcase/trybewarts/',
   },
 ];
+const myStacks = [
+  {
+    name: 'Bootstrap',
+    img: '/img/stack_icons/bootstrap.png',
+    url: 'https://getbootstrap.com/',
+  },
+  {
+    name: 'CSS',
+    img: '/img/stack_icons/css-3.png',
+    url: 'https://www.w3.org/TR/CSS/#intro',
+  },
+  {
+    name: 'Git',
+    img: '/img/stack_icons/git.png',
+    url: 'https://git-scm.com/',
+  },
+  {
+    name: 'JavaScript',
+    img: '/img/stack_icons/js.png',
+    url: 'https://www.javascript.com/',
+  },
+  {
+    name: 'Jest',
+    img: '/img/stack_icons/jest.png',
+    url: 'https://jestjs.io/',
+  },
+  {
+    name: 'jQuery',
+    img: '/img/stack_icons/jquery.png',
+    url: 'https://jquery.com/',
+  },
+  {
+    name: 'React',
+    img: '/img/stack_icons/react.png',
+    url: 'https://reactjs.org/',
+  },
+  {
+    name: 'Sass',
+    img: '/img/stack_icons/sass.png',
+    url: 'https://sass-lang.com/',
+  },
+];
 
-window.onload = myProjects.map((project) => {
+// Creates links to my projects on load
+myProjects.map((project) => {
   const cardId = '#' + project.id;
   $('<a></a>')
     .text(project.title)
     .addClass('project-card')
     .attr('id', project.id)
-    .attr('href', project.url)
-    .attr('target', '_blank')
+    .prop('href', project.url)
+    .prop('target', '_blank')
     .appendTo('#projects-box');
   $(project.icon).prependTo(cardId);
 
   if (!project.available) {
-    $(cardId)
-      .addClass('disabled')
-      .attr('title', 'Em breve')
-      .attr('target', '');
-  } 
+    $(cardId).addClass('disabled').prop('title', 'Em breve').prop('target', '');
+  }
+});
+
+// Creates the list of my stacks on load
+myStacks.map((stack) => {
+  const stackId = '#' + stack.name;
+  $('<a></a>')
+    .prop('href', stack.url)
+    .prop('title', stack.name)
+    .prop('target', '_blank')
+    .attr('id', stack.name)
+    .appendTo('#stack-box');
+  $('<img />').prop('src', stack.img).addClass('stack').appendTo(stackId);
 });
 
 $('#bg-music').prop('volume', 0.15); // Sets the volume of the bgMusic.
