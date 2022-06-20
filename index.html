@@ -25,13 +25,14 @@
     <!-- jQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/css/mystyles.css?ts=<?= time() ?" />
+    <link rel="stylesheet" type="text/css" href="/css/mystyles.css?ts=<?= time() ?" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css?ts=<?= time() ?" />
     <title>DMC Landing Page</title>
   </head>
   <body class="container-fluid w-75 container-format rounded-3">
     <audio id="bg-music" src="/bgm/Creeping Spiders - Nat Keefe & BeatMower.mp3" loop autoplay></audio>
     <div class="row overflow-hidden">
-      <div id="colunm-left" class="w-50">
+      <div id="colunm-left" class="col-md-6">
         <div class="top-contact-bar">
           <p class="text-center">
             <a href="https://github.com/Mudows" target="_blank"
@@ -51,7 +52,7 @@
         <h5>
           Olá! Eu sou <span class="text-danger">Diego M. Cezar</span> e sou um
         </h5>
-        <h1 class="text-primary">Desenvolvedor Web<br> Front-end</h1>
+        <h1>Desenvolvedor Web<br>Front-end</h1>
         <i class="fa-solid fa-angles-down down-arrow"></i>
       </div>
         <div class="content-block">
@@ -116,7 +117,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h1
-                        class="modal-title text-primary"
+                        class="modal-title"
                         id="exampleModalLabel"
                       >
                         Obrigado!
@@ -175,7 +176,7 @@
 
         </div>
       </div>
-      <div id="colunm-right" class="w-50">
+      <div id="colunm-right" class="col-md-6">
         <div id="photo-frame" class="photo-frame">
           <div class="my-photo"></div>
         </div>
@@ -185,7 +186,7 @@
       </div>
       <div id="page-footer" class="page-footer">
         Ícones retirados de <a href="https://iconscout.com/">IconScout</a> e
-        <a href="https://www.flaticon.com/">Flaticon</a>. | Site desenvolvido por Diego M. Cezar utilizando Bootstrap, jQuery e <span style="color: #7a3db8;"><i class="fa-solid fa-hat-wizard"></i></span>.
+        <a href="https://www.flaticon.com/">Flaticon</a>. | Site desenvolvido por Diego M. Cezar utilizando Bootstrap, jQuery, Sass e <span style="color: #7a3db8;"><i class="fa-solid fa-hat-wizard"></i></span>.
       </div>
     </div>
     <div id="test-area" class="row">

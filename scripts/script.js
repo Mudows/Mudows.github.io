@@ -17,7 +17,7 @@ const myProjects = [
   },
   {
     title: 'Simple Games',
-    available: true,
+    available: false,
     icon: '<i class="fa-solid fa-gamepad"></i><br>',
     id: 'project-3',
     url: 'https://mudows.github.io/simple-games/',
@@ -52,7 +52,7 @@ const myProjects = [
   },
   {
     title: 'Trybewarts',
-    available: true,
+    available: false,
     icon: '<i class="fa-brands fa-wpforms"></i><br>',
     id: 'project-8',
     url: 'https://mudows.github.io/trybe-projects-showcase/trybewarts/',
@@ -114,7 +114,7 @@ myProjects.map((project) => {
   $(project.icon).prependTo(cardId);
 
   if (!project.available) {
-    $(cardId).addClass('disabled').prop('title', 'Em breve').prop('target', '');
+    $(cardId).addClass('disabled').prop('title', 'Em breve').prop('target', '').prop('href', '#');
   }
 });
 
@@ -130,7 +130,7 @@ myStacks.map((stack) => {
   $('<img />').prop('src', stack.img).addClass('stack').appendTo(stackId);
 });
 
-$('#bg-music').prop('volume', 0.15); // Sets the volume of the bgMusic.
+$('#bg-music').prop('volume', 0.4); // Sets the volume of the bgMusic.
 
 const validateEmailInput = () => {
   const emailValidation = /\S+@\S+\.\S+/;

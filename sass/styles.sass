@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap')
+
+$color1: #0088c5
+$color1Lighter: #00aaf6
+$color-2: #ac1e44
+$color-3: #ff773a
+$color3Lighter: #ff9657
+$color-text: #373737
+$color-bg: #f2f0e6
+$textShadow: -2px 1px 4px gray
+
+html
+  background: linear-gradient(140deg, $color1, $color-bg, $color-3)
+  background-size: 1000% 1000%
+  -webkit-animation: GradientBackground 30s ease infinite
+  -moz-animation: GradientBackground 30s ease infinite
+  animation: GradientBackground 30s ease infinite
+
+@-webkit-keyframes GradientBackground
+  0%
+    background-position: 0% 51%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 51%
+
+@-moz-keyframes GradientBackground
+  0%
+    background-position: 0% 51%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 51%
+
+@keyframes GradientBackground
+  0%
+    background-position: 0% 51%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 51%
+
+body 
+  color: $color-text
+  background-color: $color-bg
+  font-family: 'Titillium Web', sans-serif
+  box-shadow: 0px 0px 30px 1px gray
+  padding: 0px
+  max-height: 95vh
+
+h1
+  font-family: 'Kanit', sans-serif
+  font-size: 40pt
+  text-shadow: $textShadow
+  color: $color1
+
+form
+  margin-bottom: 0.8em
+
+button, a, .project-card
+  transition-duration: 0.4s
+
+a
+  color: $color1
+
+a:hover
+  color: $color-3
+
+.container-format
+  background-color: $color-bg
+  margin-top: 0.8em
+  margin-bottom: 0.8em
+
+.top-contact-bar
+  background-color: $color3Lighter
+  border-radius: 0px 0px 30px 30px
+
+.top-contact-bar a, p
+  color: $color-text
+  text-decoration: none
+
+.top-contact-bar a:hover
+  color: $color-bg
+
+.heart-3d
+  text-shadow: $textShadow
+
+.down-arrow
+  width: 100%
+  text-shadow: $textShadow
+  color: $color-3
+  font-size: 20pt
+  text-align: end
+
+.content-block
+  margin-top: 10em
+  margin-bottom: 12em
+
+/* Project List */
+
+$buttonShadow: -2px 2px 3px 0px #373737
+
+.project-box
+  width: 100%
+  height: auto
+  margin-left: auto
+  margin-right: auto
+
+.project-card
+  width: 6em
+  height: 6em
+  text-align: center
+  border-radius: 5px
+  padding-top: 0.4em
+  margin: 0.3em 0.5em
+  background-color: $color1
+  text-decoration: none
+  box-shadow: $buttonShadow
+  font-family: 'Kanit', sans-serif
+  color: $color-text
+
+.project-card:hover
+  background-color: $color-3
+  box-shadow: inset $buttonShadow
+  color: $color-bg
+
+.disabled, .disabled:hover
+  background-color: lightgray
+  box-shadow: inset $buttonShadow
+  color: gray
+
+/* End of Project List */
+/* STACK SHOWCASE STYLES */
+
+.stack
+  width: 9%
+  margin: 0.3em 0.5em
+  cursor: pointer
+
+.stack-box
+  margin-top: 1em
+  margin-bottom: 2em
+
+/* END OF STACK SHOWCASE STYLES */
+/* BIG PHOTO STYLES */
+
+.photo-frame
+  border-radius: 0px 6px 0px 300px
+  overflow: hidden
+  margin-right: 0
+  padding-right: 0
+  max-height: 85%
+
+.my-photo
+  background-image: url('/img/eu.jpg')
+  height: 30em
+  width: 100%
+
+/* FORM STYLES */
+.form-box
+  padding: 0.7em
+  background-color: $color3Lighter
+  border-radius: 30px 5px 30px 5px
+
+.modal-link
+  text-decoration: none
+
+/* END OF FORM STYLES */
+
+.page-footer
+  font-size: x-small
+  text-align: end
+  margin-bottom: 0.6em
+
+/* Bootstrap override */
+
+.text-danger
+  color: $color-2 !important
+
+.btn-primary
+  background-color: $color1
+  border: 1px solid $color1
+
+.btn-primary:hover
+  background-color: $color1Lighter
+  border: 1px solid $color1Lighter
+
+/* End of Bootstrap override */
+
+#colunm-right
+  margin-right: 0
+  padding-right: 0px
+  max-height: 90vh
+
+#colunm-left
+  overflow: scroll
+  max-height: 90vh
+
+/* Scroll Bar Config */
+
+/* width */
+::-webkit-scrollbar
+  width: 4px
+
+/* Track */
+::-webkit-scrollbar-track
+  background: $color-bg
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: $color-3
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: $color3Lighter
+
+/* End of Scroll Bar Config */
