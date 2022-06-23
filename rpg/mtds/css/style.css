@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+* {
+  font-family: "El Messiri", sans-serif;
+  color: #171717;
+}
 
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  background-image: url("../img/papyrus-bg.jpg");
+}
+
+#welcome-header {
+  /* background-color: black;
+  color: antiquewhite; */
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#welcome-msg {
+  margin-top: 4em;
+}
+#welcome-msg p {
+  margin-bottom: 0px;
+  font-size: 14pt;
+}
+
+#roles {
+  margin-left: auto;
+  margin-right: auto;
+}
+#roles a {
+  width: 51%;
+  font-size: 14pt;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  margin: 0.3em 0.5em;
+  background-color: red;
+  text-decoration: none;
+  color: #171717;
+}
+#roles a:active {
+  background-color: salmon;
+}
+
+#main-footer {
+  background-color: black;
+  color: antiquewhite;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  position: fixed;
+  width: 100vw;
+  align-self: flex-end;
+}
 
 /*# sourceMappingURL=style.css.map */
