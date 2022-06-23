@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/5bcf78eb73.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/style.css?ts=<?= time() ?"
+    />
+    <title>MTDS</title>
+  </head>
+  <body>
+    <header class="row">
+      <div class="col-2">
+        <h3>MTDS</h3>
+      </div>
+      <div class="col-10 text-end">
+        <h5>Gerador de Personagem</h5>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div class="form-group">
+          <label for="char-name" class=""></label>
+          Nome da Personagem:
+          <input
+            type="text"
+            name="char-name"
+            id="char-name"
+            class="form-control"
+            aria-describedby="char-name-describe"
+            placeholder="Tutankamen Black RX Boladão"
+          />
+          <small id="char-name-describe" class="form-text text-muted"
+            >Pense em um nome bem legal!</small
+          >
+        </div>
+        <div>
+          <p class="text-center">Distribua os pontos de atributo</p>
+          <p id="tot-char-pts" class="text-center">0</p>
+          <div class="row">
+            <div class="col-4 text-center">
+              <label for="physical">Físico</label>
+              <input
+                type="number"
+                class="form-control"
+                name="physical"
+                id="physical"
+              />
+            </div>
+            <div class="col-4 text-center">
+              <label for="mental">Mental</label>
+              <input
+                type="number"
+                class="form-control"
+                name="mental"
+                id="mental"
+              />
+            </div>
+            <div class="col-4 text-center">
+              <label for="spiritual">Espiritual</label>
+              <input
+                type="number"
+                class="form-control"
+                name="spiritual"
+                id="spiritual"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
