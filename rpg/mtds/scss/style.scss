@@ -8,9 +8,11 @@ $color-text: #171717;
 }
 
 body {
-  margin: 0px !important;
-  padding: 0px !important;
-  background-image: url('../img/papyrus-bg.jpg');
+  /* margin: 0px !important; */
+  /* padding: 0px !important; */
+  /* background-image: url('../img/papyrus-bg.jpg'); */
+  background-color: #f2e1c1;
+  box-shadow: inset 0 0 3px 5px #373737;
   width: 100vw;
   height: 100vh;
 }
@@ -66,24 +68,46 @@ body {
 
 .skill-quality {
   border-radius: 5px;
-  /* width: 7em; */
+  width: 25vw;
+  height: 35px;
+  margin: auto;
+  padding-top: 7px;
 }
 
-#good-skills, #good-skills span, .good {
+#good-skills,
+.good {
   background-color: green;
   color: white;
 }
 
-#normal-skills, #normal-skills span, .normal {
+#normal-skills,
+.normal {
   background-color: gray;
   color: black;
 }
 
-#bad-skills, #bad-skills span, .bad {
+#bad-skills,
+.bad {
   background-color: red;
   color: white;
 }
 
 .selected {
   box-shadow: inset 0 0 0 3px black;
+}
+
+ul {
+  margin-top: 0.5em;
+  list-style: none;
+  background-color: #f5deb3;
+  i {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+#skillset-block,
+#attr-block {
+  width: 80vw;
+  margin: 1.5em auto;
 }
