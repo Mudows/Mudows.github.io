@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -22,17 +24,15 @@
       src="https://kit.fontawesome.com/5bcf78eb73.js"
       crossorigin="anonymous"
     ></script>
-    <!-- jQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Custom CSS -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="./css/style.css?ts=<?= time() ?"
+      href="../css/style.css?ts=<?= time() ?"
     />
     <title>MTDS</title>
   </head>
-  <body>
+  <body class="container-fluid">
     <header class="row">
       <div class="col-2">
         <h3>MTDS</h3>
@@ -52,46 +52,92 @@
             id="char-name"
             class="form-control"
             aria-describedby="char-name-describe"
-            placeholder="Tutankamen Black RX Boladão"
+            placeholder="Tutankamen Black RX Boladão SSJ99 Arayashiki"
           />
           <small id="char-name-describe" class="form-text text-muted"
-            >Pense em um nome bem legal!</small
+            >Tem de ter mais de 3 letras e ser irado!</small
           >
         </div>
         <div>
           <p class="text-center">Distribua os pontos de atributo</p>
-          <p id="tot-char-pts" class="text-center">0</p>
+          <p id="tot-char-pts" class="text-center">100</p>
           <div class="row">
             <div class="col-4 text-center">
-              <label for="physical">Físico</label>
+              <label for="physical"
+                >Físico <i class="fa-solid fa-hand-back-fist"></i
+              ></label>
               <input
                 type="number"
                 class="form-control"
                 name="physical"
                 id="physical"
+                value="0"
               />
             </div>
             <div class="col-4 text-center">
-              <label for="mental">Mental</label>
+              <label for="mental"
+                >Mental <i class="fa-solid fa-brain"></i
+              ></label>
               <input
                 type="number"
                 class="form-control"
                 name="mental"
                 id="mental"
+                value="0"
               />
             </div>
             <div class="col-4 text-center">
-              <label for="spiritual">Espiritual</label>
+              <label for="magical"
+                >Mágico <i class="fa-solid fa-hand-sparkles"></i
+              ></label>
               <input
                 type="number"
                 class="form-control"
-                name="spiritual"
-                id="spiritual"
+                name="magical"
+                id="magical"
+                value="0"
               />
+            </div>
+          </div>
+          <div>
+            <div class="text-center">
+              <p>Agora escolha suas habilidades:</p>
+              <div class="row">
+                <div id="good-skills" class="skill-quality col-4">3 com +3</div>
+                <div id="normal-skills" class="skill-quality col-4">4 com 0</div>
+                <div id="bad-skills" class="skill-quality col-4">2 com -2</div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="physical-skills" class="col-4">
+                <ul>
+                  <i class="fa-solid fa-hand-back-fist"></i>
+                  <li class="skill">Atletismo</li>
+                  <li class="skill">Luta</li>
+                  <li class="skill">Precisão</li>
+                </ul>
+              </div>
+              <div id="mental-skills" class="col-4">
+                <ul>
+                  <i class="fa-solid fa-brain"></i>
+                  <li class="skill">Erudição</li>
+                  <li class="skill">Engenharia</li>
+                  <li class="skill">Medicina</li>
+                </ul>
+              </div>
+              <div id="magical-skills" class="col-4">
+                <ul>
+                  <i class="fa-solid fa-hand-sparkles"></i>
+                  <li class="skill">Bênçãos</li>
+                  <li class="skill">Espiritismo</li>
+                  <li class="skill">Maldições</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </form>
     </main>
+    <script src="./charscript.js" type="text/javascript"></script>
   </body>
 </html>
