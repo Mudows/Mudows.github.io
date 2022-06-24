@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 const physVal = document.querySelector('#physical');
 const menVal = document.querySelector('#mental');
 const magVal = document.querySelector('#magical');
@@ -48,45 +52,65 @@ skillQualityList.forEach((quality) => {
   quality.addEventListener('click', selectedQuality);
 });
 
+let goodCounter = 3 - document.querySelectorAll('.good').length;
+let badCounter = 2 - document.querySelectorAll('.bad').length;
+
 const setSkillBonus = (e) => {
   const selectedQuality = document.querySelector('.selected');
   const goodSkills = document.querySelector('#good-skills');
-  const normalSkills = document.querySelector('#normal-skills');
   const badSkills = document.querySelector('#bad-skills');
-  let goodCounter = 3 - document.querySelectorAll('.good').length;
-  let normalCounter = 4 - document.querySelectorAll('.normal').length;
-  let badCounter = 2 - document.querySelectorAll('.bad').length;
 
   if (!selectedQuality) {
-    e.target.classList.remove('normal');
+    e.target.classList.add('normal');
     e.target.classList.remove('bad');
     e.target.classList.remove('good');
+    e.target.childNodes[1].textContent = '0';
   }
+
   if (selectedQuality.id === 'good-skills' && goodCounter > 0) {
     e.target.classList.remove('normal');
     e.target.classList.remove('bad');
     e.target.classList.add('good');
+    e.target.childNodes[1].textContent = '+3';
   }
-  if (selectedQuality.id === 'normal-skills' && normalCounter > 0) {
-    e.target.classList.remove('good');
-    e.target.classList.remove('bad');
-    e.target.classList.add('normal');
-  }
+
   if (selectedQuality.id === 'bad-skills' && badCounter > 0) {
     e.target.classList.remove('normal');
     e.target.classList.remove('good');
     e.target.classList.add('bad');
+    e.target.childNodes[1].textContent = '-2';
   }
 
   goodCounter = 3 - document.querySelectorAll('.good').length;
-  normalCounter = 4 - document.querySelectorAll('.normal').length;
   badCounter = 2 - document.querySelectorAll('.bad').length;
 
-  goodSkills.textContent = `${goodCounter} com +3`;
-  normalSkills.textContent = `${normalCounter} com 0`;
-  badSkills.textContent = `${badCounter} com -2`;
+  goodSkills.textContent = `Escolha ${goodCounter} Boa(s)`;
+  badSkills.textContent = `Escolha ${badCounter} Ruin(s)`;
 };
 
 skillList.forEach((skill) => {
   skill.addEventListener('click', setSkillBonus);
 });
+
+const itens = [
+  {
+    item: 'Pechera',
+    attr: 'Físico',
+    desc: 'Portada pelos guerreiros do sertão. Esta arma é muito versátil e pode ser usada para cortar mato, churrasco ou vacilões. Se investir 1 ponto de Físico antes de atacar e acertar, o alvo perde 1 ponto de vida por 2 rodadas. Não cumulativo.'
+  },
+  {
+    item: 'Machadão',
+    attr: 'Físico',
+    desc: 'Descrição'
+  },
+  {
+    item: 'Arco e Flecha',
+    attr: 'Físico',
+    desc: 'Descrição.'
+  },
+  {
+    item: 'Olho do Tinhoso',
+    attr: 'Maldição',
+    desc: 'Descrição.'
+  }
+]

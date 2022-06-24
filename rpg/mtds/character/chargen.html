@@ -15,8 +15,13 @@
     />
     <!-- BOOTSTRAP SCRIPT -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
     <!-- FONT AWESOME -->
@@ -100,41 +105,88 @@
             </div>
           </div>
         </div>
-          <div id="skillset-block">
-            <div class="text-center">
-              <p>Agora escolha suas habilidades:</p>
-              <div class="row">
-                <div id="good-skills" class="skill-quality col-4">3 com +3</div>
-                <div id="normal-skills" class="skill-quality col-4">4 com 0</div>
-                <div id="bad-skills" class="skill-quality col-4">2 com -2</div>
-              </div>
-            </div>
+        <div id="skillset-block">
+          <div class="text-center">
+            <p>Agora escolha suas habilidades:</p>
             <div class="row">
-              <div id="physical-skills" class="col-4">
-                <ul class="list-group text-center">
-                  <i class="fa-solid fa-hand-back-fist"></i>
-                  <li class="skill">Atletismo</li>
-                  <li class="skill">Luta</li>
-                  <li class="skill">Precisão</li>
-                </ul>
+              <div id="good-skills" class="skill-quality col-6">
+                Escolha 3 Boa(s)
               </div>
-              <div id="mental-skills" class="col-4">
-                <ul class="list-group text-center">
-                  <i class="fa-solid fa-brain"></i>
-                  <li class="skill">Erudição</li>
-                  <li class="skill">Engenharia</li>
-                  <li class="skill">Medicina</li>
-                </ul>
-              </div>
-              <div id="magical-skills" class="col-4">
-                <ul class="list-group text-center">
-                  <i class="fa-solid fa-hand-sparkles"></i>
-                  <li class="skill">Bênçãos</li>
-                  <li class="skill">Espiritismo</li>
-                  <li class="skill">Maldições</li>
-                </ul>
+              <!-- <div id="normal-skills" class="skill-quality col-4">4 com 0</div> -->
+              <div id="bad-skills" class="skill-quality col-6">
+                Escolha 2 Ruin(s)
               </div>
             </div>
+          </div>
+          <div class="row">
+            <div id="physical-skills" class="col-4">
+              <ul class="list-group text-center">
+                <i class="fa-solid fa-hand-back-fist"></i>
+                <li class="skill normal">
+                  Atletismo
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="skill normal">
+                  Luta
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="skill normal">
+                  Precisão
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+              </ul>
+            </div>
+            <div id="mental-skills" class="col-4">
+              <ul class="list-group text-center">
+                <i class="fa-solid fa-brain"></i>
+                <li class="skill normal">
+                  Erudição
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="skill normal">
+                  Engenharia
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="skill normal">
+                  Medicina
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+              </ul>
+            </div>
+            <div id="magical-skills" class="col-4">
+              <ul class="list-group text-center">
+                <i class="fa-solid fa-hand-sparkles"></i>
+                <li class="skill normal">
+                  Bênçãos
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="skill normal">
+                  Espiritismo
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="skill normal">
+                  Maldições
+                  <span class="badge badge-primary badge-pill">0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="gear-block">
+          <div class="text-center">
+            <p>Escolha 3 equipamentos</p>
+          </div>
+          <div>
+            <ul id="gear-choices" class="col-10">
+              <li data-toggle="tooltip" data-placement="top" title="Test">Pechera</li>
+              <li>Machadão</li>
+              <li>Arco e Flecha</li>
+              <li>Olho do Tinhoso</li>
+              <li>Vela Possuída</li>
+              <li>Terço de São Dizinho</li>
+              <li>Curativo</li>
+              <li>Corda & Gancho (10m)</li>
+            </ul>
           </div>
         </div>
       </form>
