@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 * {
   font-family: "El Messiri", sans-serif;
   color: #171717;
@@ -9,7 +10,7 @@ body {
   /* padding: 0px !important; */
   /* background-image: url('../img/papyrus-bg.jpg'); */
   background-color: #f2e1c1;
-  box-shadow: inset 0 0 3px 5px #373737;
+  /* box-shadow: inset 0 0 3px 5px #373737; */
   width: 100vw;
   /* height: 100vh; */
 }
@@ -18,7 +19,11 @@ input {
   text-align: center;
 }
 
-#welcome-header, h3 {
+blockquote, q {
+  font-style: italic;
+}
+
+#welcome-header, h2 {
   /* background-color: black;
   color: antiquewhite; */
   padding-top: 0.5em;
@@ -127,9 +132,10 @@ form div {
   margin: 1em auto;
 }
 
-/* .stats {
-  width: 22vw;
-  margin: auto;
-} */
+.signature {
+  font-family: "Homemade Apple", cursive;
+  font-size: 32pt;
+  text-align: end;
+}
 
 /*# sourceMappingURL=style.css.map */
