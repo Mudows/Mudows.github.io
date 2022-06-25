@@ -1,25 +1,50 @@
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
 const physVal = document.querySelector('#physical');
 const menVal = document.querySelector('#mental');
 const magVal = document.querySelector('#magical');
-const totCharPts = document.querySelector('#tot-char-pts');
+
+const characterPts = document.querySelector('#tot-char-pts');
+
+const $endBtn = $('#end-creation-btn');
+const skillQualityList = document.querySelectorAll('.skill-quality');
+const skillList = document.querySelectorAll('.skill');
+let goodCounter = 3 - document.querySelectorAll('.good').length;
+let badCounter = 2 - document.querySelectorAll('.bad').length;
+let totCustomPts = 15;
+
+const validateCharacter = () => {
+  const $charName = $('#char-name').val().length;
+  console.log($charName);
+  if (
+    goodCounter === 0 &&
+    badCounter === 0 &&
+    totCustomPts === 0 &&
+    $charName >= 3
+  ) {
+    $endBtn.prop('disabled', false);
+    return;
+  }
+  $endBtn.prop('disabled', true);
+  return;
+};
 
 const updateCurrPts = () => {
   const remainingPts =
     parseInt(physVal.value) + parseInt(menVal.value) + parseInt(magVal.value);
-  const maxValue = 100;
+  const maxValue = 15;
   const minValue = 0;
-  totCharPts.textContent = 100 - remainingPts;
-  const total = parseInt(totCharPts.textContent);
-  if (total > maxValue) totCharPts.textContent = maxValue;
-  if (total < minValue) totCharPts.textContent = minValue;
+  totCustomPts = maxValue - remainingPts
+  /* const total = parseInt(characterPts.textContent); */
+  if (totCustomPts > maxValue) totCustomPts = maxValue;
+  if (totCustomPts < minValue) totCustomPts = minValue;
+  characterPts.textContent = totCustomPts;
 };
 
 const attributesLimits = (e) => {
-  const attrMaxValue = parseInt(totCharPts.textContent);
+  const attrMaxValue = totCustomPts;
   const attrMinValue = 0;
   let targetAttr = e.target.value;
   if (attrMaxValue === 0) e.target.value = e.target.value - 1;
@@ -29,14 +54,12 @@ const attributesLimits = (e) => {
 const attrFunctionWrapper = (e) => {
   attributesLimits(e);
   updateCurrPts();
+  validateCharacter();
 };
 
 physVal.addEventListener('change', attrFunctionWrapper);
 menVal.addEventListener('change', attrFunctionWrapper);
 magVal.addEventListener('change', attrFunctionWrapper);
-
-const skillQualityList = document.querySelectorAll('.skill-quality');
-const skillList = document.querySelectorAll('.skill');
 
 const selectedQuality = (e) => {
   const selectedQuality = document.querySelector('.selected');
@@ -51,9 +74,6 @@ const selectedQuality = (e) => {
 skillQualityList.forEach((quality) => {
   quality.addEventListener('click', selectedQuality);
 });
-
-let goodCounter = 3 - document.querySelectorAll('.good').length;
-let badCounter = 2 - document.querySelectorAll('.bad').length;
 
 const setSkillBonus = (e) => {
   const selectedQuality = document.querySelector('.selected');
@@ -86,31 +106,147 @@ const setSkillBonus = (e) => {
 
   goodSkills.textContent = `Escolha ${goodCounter} Boa(s)`;
   badSkills.textContent = `Escolha ${badCounter} Ruin(s)`;
+  validateCharacter();
 };
 
-skillList.forEach((skill) => {
-  skill.addEventListener('click', setSkillBonus);
-});
+$('.skill').on('click', setSkillBonus);
 
 const itens = [
   {
-    item: 'Pechera',
+    name: 'Pechera',
     attr: 'Físico',
-    desc: 'Portada pelos guerreiros do sertão. Esta arma é muito versátil e pode ser usada para cortar mato, churrasco ou vacilões. Se investir 1 ponto de Físico antes de atacar e acertar, o alvo perde 1 ponto de vida por 2 rodadas. Não cumulativo.'
+    desc: 'Portada pelos guerreiros do sertão. Esta arma é muito versátil e pode ser usada para cortar mato, churrasco ou vacilões. Se investir 1 ponto de Físico antes de atacar e acertar, o alvo perde 1 ponto de vida por 2 rodadas. Não cumulativo.',
   },
   {
-    item: 'Machadão',
+    name: 'Machadão',
     attr: 'Físico',
-    desc: 'Descrição'
+    desc: 'Descrição',
   },
   {
-    item: 'Arco e Flecha',
+    name: 'Arco e Flecha',
     attr: 'Físico',
-    desc: 'Descrição.'
+    desc: 'Descrição.',
   },
   {
-    item: 'Olho do Tinhoso',
+    name: 'Olho do Tinhoso',
     attr: 'Maldição',
-    desc: 'Descrição.'
+    desc: 'Descrição.',
+  },
+];
+
+itens.forEach((item) => {
+  $('<li></li>')
+    .text(item.name)
+    .attr('data-toggle', 'tooltip')
+    .attr('data-placement', 'top')
+    .attr('title', item.desc)
+    .appendTo('#gear-choices');
+});
+
+const maxHealth = 10;
+let currHeatlh = 10;
+let maxPhys = 0;
+let currPhys = 0;
+let maxMen = 0;
+let currMen = 0;
+let maxMag = 0;
+let currMag = 0;
+
+const updateResource = (e) => {
+  // This is so stupid. There must be a better way to do this.
+  switch (e.target.id) {
+    case 'minus-health-box':
+      currHeatlh -= 1;
+      $('#health-bar')
+        .text(`${currHeatlh} / ${maxHealth}`);
+      break;
+    case 'plus-health-box':
+      currHeatlh += 1;
+      $('#health-bar')
+        .text(`${currHeatlh} / ${maxHealth}`);
+      break;
+    case 'minus-phys-box':
+      currPhys -= 1;
+      $('#phys-resource')
+        .text(`${currPhys} / ${maxPhys}`);
+      break;
+    case 'plus-phys-box':
+      currPhys = currPhys + 1;
+      $('#phys-resource')
+        .text(`${currPhys} / ${maxPhys}`);
+      break;
+    case 'minus-men-box':
+      currMen -= 1;
+      $('#men-resource')
+        .text(`${currMen} / ${maxMen}`);
+      break;
+    case 'plus-men-box':
+      currMen = currMen + 1;
+      $('#men-resource')
+        .text(`${currMen} / ${maxMen}`);
+      break;
+    case 'minus-mag-box':
+      currMag -= 1;
+      $('#mag-resource')
+        .text(`${currMag} / ${maxMag}`);
+      break;
+    case 'plus-mag-box':
+      currMag += 1;
+      $('#mag-resource')
+        .text(`${currMag} / ${maxMag}`);
+      break;
   }
-]
+};
+
+const createSheet = () => {
+  const resIds = ['health-box', 'phys-box', 'men-box', 'mag-box'];
+  $('#char-name')
+    .addClass('form-control-plaintext')
+    .removeClass('form-control')
+    .css('font-size', '24pt')
+    .attr('readonly', true);
+  
+  $('#health-bar')
+    .text(`${currHeatlh} / ${maxHealth}`);
+  maxPhys = 5 + parseInt(physVal.value);
+  currPhys = maxPhys
+  maxMen = 5 + parseInt(menVal.value);
+  currMen = maxMen
+  maxMag = 5 + parseInt(magVal.value);
+  currMag = maxMag
+  $('#phys-resource')
+    .text(`${currPhys} / ${maxPhys}`);
+  $('#men-resource')
+    .text(`${currMen} / ${maxMen}`);
+  $('#mag-resource')
+    .text(`${currMag} / ${maxMag}`);
+
+  resIds.forEach((id) => {
+    const targetid = '#' + id;
+    $('<button></button>')
+    .text('-')
+    .prop('type', 'button')
+    .prop('id', 'minus-' + id)
+    .on('click', updateResource)
+    .appendTo(targetid);
+    $('<button></button>')
+    .text('+')
+    .prop('type', 'button')
+    .prop('id', 'plus-' + id)
+    .on('click', updateResource)
+    .appendTo(targetid);
+  });
+
+  
+
+
+  
+  $('#stats-and-attrs').removeClass('d-none');
+  $('.skill').off('click', setSkillBonus);
+  $('.delete').remove();
+  $endBtn.remove();
+};
+
+$endBtn.on('click', createSheet);
+
+

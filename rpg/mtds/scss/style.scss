@@ -17,8 +17,12 @@ body {
   /* height: 100vh; */
 }
 
-#welcome-header {
-  $padding: 0.3em;
+input {
+  text-align: center;
+}
+
+#welcome-header, h3 {
+  $padding: 0.5em;
   /* background-color: black;
   color: antiquewhite; */
   padding-top: $padding;
@@ -120,8 +124,18 @@ ul {
   }
 }
 
-#skillset-block,
+/* #skillset-block,
 #attr-block {
   width: 90vw;
   margin: 1.5em auto;
+} */
+
+form div {
+  width: 90vw;
+  margin: 1em auto;
 }
+
+/* .stats {
+  width: 22vw;
+  margin: auto;
+} */

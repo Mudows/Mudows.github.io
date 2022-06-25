@@ -39,18 +39,14 @@
   </head>
   <body class="container-fluid">
     <header class="row">
-      <div class="col-2">
-        <h3>MTDS</h3>
-      </div>
-      <div class="col-10 text-end">
-        <h5>Gerador de Personagem</h5>
+      <div class="col-12">
+        <h3>MTDS - Gerador de Personagem</h3>
       </div>
     </header>
     <main>
       <form>
         <div class="form-group">
-          <label for="char-name" class=""></label>
-          Nome da Personagem:
+          <label for="char-name" class="delete">Nome da Personagem:</label>
           <input
             type="text"
             name="char-name"
@@ -59,13 +55,19 @@
             aria-describedby="char-name-describe"
             placeholder="Tutankamen Black RX Boladão SSJ99 Arayashiki"
           />
-          <small id="char-name-describe" class="form-text text-muted"
+          <small id="char-name-describe" class="form-text text-muted delete"
             >Tem de ter mais de 3 letras e ser irado!</small
           >
         </div>
-        <div id="attr-block">
+        <div id="stats-and-attrs" class="row d-none text-center">
+          <div id="health-box" class="col-3 text-center stats">Vida<p id="health-bar"></p></div>
+          <div id="phys-box" class="col-3 text-center stats">Físico<p id="phys-resource"></p></div>
+          <div id="men-box" class="col-3 text-center stats">Mental<p id="men-resource"></p></div>
+          <div id="mag-box" class="col-3 text-center stats">Mágico<p id="mag-resource"></p></div>
+        </div>
+        <div id="attr-block" class="delete">
           <p class="text-center">Distribua os pontos de atributo</p>
-          <p id="tot-char-pts" class="text-center">100</p>
+          <p id="tot-char-pts" class="text-center">15</p>
           <div class="row">
             <div class="col-4 text-center">
               <label for="physical"
@@ -106,7 +108,7 @@
           </div>
         </div>
         <div id="skillset-block">
-          <div class="text-center">
+          <div class="text-center delete">
             <p>Agora escolha suas habilidades:</p>
             <div class="row">
               <div id="good-skills" class="skill-quality col-6">
@@ -172,22 +174,23 @@
             </div>
           </div>
         </div>
-        <div id="gear-block">
+        <!-- <div id="gear-block">
           <div class="text-center">
             <p>Escolha 3 equipamentos</p>
           </div>
           <div>
-            <ul id="gear-choices" class="col-10">
-              <li data-toggle="tooltip" data-placement="top" title="Test">Pechera</li>
-              <li>Machadão</li>
-              <li>Arco e Flecha</li>
-              <li>Olho do Tinhoso</li>
-              <li>Vela Possuída</li>
-              <li>Terço de São Dizinho</li>
-              <li>Curativo</li>
-              <li>Corda & Gancho (10m)</li>
-            </ul>
+            <ul id="gear-choices" class="col-10"></ul>
           </div>
+        </div> -->
+        <div>
+          <button
+            id="end-creation-btn"
+            type="button"
+            class="btn btn-primary"
+            disabled
+          >
+            Finalizar
+          </button>
         </div>
       </form>
     </main>
