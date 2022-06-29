@@ -4,7 +4,7 @@ A comprehensive list of things to fix or improve in the current iteration of the
 
 ## :fire: High Priority
 <details>
-<summary style="font-size: 14pt;">:bug: Bugs to Fix</summary>
+<summary>:bug: Bugs to Fix</summary>
 
 - [ ] If the user clicks the value of the skill instead of the name, the function won't update the number of available choices properly and wont't remove the flag that indicates it was chosen as either good or bad skill;
 - [ ] When removing the 'good' or 'bad' flag from skills to reset it to 'normal', the counter of available Good and Bad skill choices do not update. It only updates after choosing a new Good or Bad skill;
@@ -15,7 +15,7 @@ A comprehensive list of things to fix or improve in the current iteration of the
 
 ## :snowflake: Low Priority
 <details>
-<summary style="font-size: 14pt;">:heavy_dollar_sign: JavaScript</summary>
+<summary>:heavy_dollar_sign: JavaScript</summary>
 
 - [ ] Convert the code from vanilla to full jQuery;
 - [ ] Clean up unecessary repetitions;
@@ -24,7 +24,7 @@ A comprehensive list of things to fix or improve in the current iteration of the
 </details>
 
 <details>
-<summary style="font-size: 14pt;">:art: CSS</summary>
+<summary>:art: CSS</summary>
 
 - [ ] Fix the display of the skills on mobile devices;
 - [ ] Align the 'Finalizar' button properly;
@@ -33,6 +33,6 @@ A comprehensive list of things to fix or improve in the current iteration of the
 </details>
 
 <!-- <details>
-<summary style="font-size: 14pt;"></summary>
+<summary></summary>
 
 </details> -->
