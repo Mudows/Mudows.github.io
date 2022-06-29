@@ -11,6 +11,11 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/5bcf78eb73.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -41,7 +46,7 @@
             </p>
           </header>
           <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping"><b>></b></span>
+            <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-pencil"></i></span>
             <input
               id="texto-tarefa"
               class="form-control"
@@ -84,7 +89,7 @@
             utilizando jQuery e Sass.
           </p>
         </section>
-        <section class="col-md-9">
+        <section id="task-list" class="col-md-9">
           <ol id="lista-tarefas"></ol>
         </section>
       </section>
