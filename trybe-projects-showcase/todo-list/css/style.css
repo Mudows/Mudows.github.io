@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+#how-to {
+  margin-bottom: 3em;
+  font-size: 9pt;
+  font-style: italic;
+  text-align: center;
+}
+
+#disclaimer {
+  font-size: 8pt;
+}
+#disclaimer a {
+  color: green;
+}
+#disclaimer a:hover {
+  color: blue;
+}
+
+#control-panel {
+  background-color: lightgray;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
