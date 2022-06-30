@@ -46,7 +46,9 @@
             </p>
           </header>
           <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-pencil"></i></span>
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-pencil"></i
+            ></span>
             <input
               id="texto-tarefa"
               class="form-control"
@@ -55,26 +57,18 @@
               aria-describedby="addon-wrapping"
             />
           </div>
-          <div class="text-center d-grid gap-md-1">
-            <button
-              type="button"
-              id="criar-tarefa"
-              class="btn btn-primary btn-sm"
-            >
+          <div id="panel-btns" class="text-center d-grid gap-md-1">
+            <button type="button" id="criar-tarefa" class="btn btn-sm">
               Criar Tarefa
             </button>
-            <button id="salvar-tarefas" class="btn btn-success btn-sm">
-              Salvar Lista
-            </button>
-            <button id="remover-finalizados" class="btn btn-secondary btn-sm">
+            <button id="salvar-tarefas" class="btn btn-sm">Salvar Lista</button>
+            <button id="remover-finalizados" class="btn btn-sm">
               Limpar Finalizados
             </button>
-            <button id="remover-selecionado" class="btn btn-secondary btn-sm">
+            <button id="remover-selecionado" class="btn btn-sm">
               Remover Selecionado
             </button>
-            <button id="apaga-tudo" class="btn btn-danger btn-sm">
-              Limpar Lista
-            </button>
+            <button id="apaga-tudo" class="btn btn-sm">Limpar Lista</button>
             <div>
               <button id="mover-cima" class="btn btn-dark btn-sm">∧</button>
               <button id="mover-baixo" class="btn btn-dark btn-sm">∨</button>
@@ -83,10 +77,10 @@
           <br />
           <br />
           <p id="disclaimer">
-            Desenvolvido por Diego M. "Mudows" Cezar em Mar/2022 com base no
+            To-Do List v1.5 | Desenvolvido por <a href="https://mudows.github.io/" target="_blank">Diego M. Cezar</a> em Mar/2022 com base no
             projeto de avaliação do Bloco 5 realizado na
             <a href="https://www.betrybe.com/" target="_blank">Trybe</a>,
-            utilizando jQuery e Sass.
+            utilizando Bootstrap, jQuery e Sass.
           </p>
         </section>
         <section id="task-list" class="col-md-9">
