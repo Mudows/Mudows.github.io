@@ -12,8 +12,8 @@ window.onload = function () {
 };
 
 // ADICIONA O EVENTO DE ADICIONAR TAREFA (addTask) AO BOTÃO DE CRIAR TAREFA.
-document.getElementById('criar-tarefa').addEventListener('click', addTask);
-document.getElementById('texto-tarefa').addEventListener('keydown', (event) => {
+$('#criar-tarefa').on('click', addTask);
+$('#texto-tarefa').on('keydown', (event) => {
   const key = event.code;
   if (key === 'Enter') addTask();
 });
@@ -39,13 +39,15 @@ function addTask() {
 
 // ESTA FUNÇÃO COLORE O ELEMENTO CLICADO DE CINZA E GARANTE QUE APENAS UM DOS ITENS DA LISTA ESTEJA COM O FUNDO CINZA.
 function selectTask(event) {
-  const nTasks = document.getElementsByTagName('li');
+  $('li').removeClass('selected')
+  event.target.classList.add('selected')
+  /* const nTasks = document.getElementsByTagName('li');
   for (let i = 0; i < nTasks.length; i += 1) {
     nTasks[i].style.backgroundColor = '';
     nTasks[i].style.color = '';
   }
   event.target.style.backgroundColor = 'gray';
-  event.target.style.color = 'white';
+  event.target.style.color = 'white'; */
 }
 
 // FUNÇÃO QUE RISCA A TAREFA MARCANDO-A COMO COMPLETA, OU DESMARCA.
@@ -122,7 +124,7 @@ document
 function removeSelected() {
   const toRemove = document.getElementsByTagName('li');
   for (let i = 0; i < toRemove.length; i += 1) {
-    if (toRemove[i].style.backgroundColor === 'gray') {
+    if (toRemove[i].className === 'selected') {
       toRemove[i].remove();
       return;
     }
