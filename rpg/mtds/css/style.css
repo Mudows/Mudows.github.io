@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+* {
+  font-family: "El Messiri", sans-serif;
+  color: #171717;
+}
+
+body {
+  /* margin: 0px !important; */
+  /* padding: 0px !important; */
+  /* background-image: url('../img/papyrus-bg.jpg'); */
+  background-color: #f2e1c1;
+  /* box-shadow: inset 0 0 3px 5px #373737; */
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+input {
+  text-align: center;
+}
+
+blockquote, q {
+  font-style: italic;
+}
+
+#welcome-header, h2 {
+  /* background-color: black;
+  color: antiquewhite; */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#welcome-msg {
+  margin-top: 4em;
+}
+#welcome-msg p {
+  margin-bottom: 0px;
+  font-size: 14pt;
+}
+
+#roles {
+  margin-left: auto;
+  margin-right: auto;
+}
+#roles a {
+  width: 51%;
+  font-size: 14pt;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  margin: 0.3em 0.5em;
+  background-color: red;
+  text-decoration: none;
+  color: #171717;
+}
+#roles a:active {
+  background-color: salmon;
+}
+
+#main-footer {
+  background-color: black;
+  color: antiquewhite;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  position: fixed;
+  width: 100vw;
+  align-self: flex-end;
+}
+
+#tot-char-pts {
+  font-size: 20pt;
+  background-color: #e2e9ca;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px 1px #373737;
+}
+
+.skill-quality {
+  border-radius: 5px;
+  width: 40vw;
+  height: 35px;
+  margin: auto;
+  padding-top: 7px;
+}
+
+#good-skills,
+.good span {
+  background-color: green;
+  color: white;
+}
+
+#normal-skills,
+.normal span {
+  background-color: gray;
+  color: black;
+}
+
+#bad-skills,
+.bad span {
+  background-color: red;
+  color: white;
+}
+
+.selected {
+  box-shadow: inset 0 0 0 3px black;
+}
+
+ul {
+  width: 110%;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  background-color: #e2e9ca;
+  box-shadow: inset 0 0 3px 1px #373737;
+}
+ul i {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* #skillset-block,
+#attr-block {
+  width: 90vw;
+  margin: 1.5em auto;
+} */
+form div {
+  width: 90vw;
+  margin: 1em auto;
+}
+
+.signature {
+  font-family: "Homemade Apple", cursive;
+  font-size: 32pt;
+  text-align: end;
+}
+
+/*# sourceMappingURL=style.css.map */
