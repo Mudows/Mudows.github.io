@@ -8,9 +8,9 @@ const menVal = document.querySelector('#mental')
 const magVal = document.querySelector('#magical')
 const $endBtn = $('#end-creation-btn')
 const skillQualityList = document.querySelectorAll('.skill-quality')
-let $goodCounter = 3 - $('.good').length
-let $badCounter = 2 - $('.bad').length
-let totCustomPts = 15
+let $goodCounter = 3
+let $badCounter = 2
+let totCustomPts = 20
 
 const validateCharacter = () => {
   const $charName = $('#char-name').val().length
@@ -76,29 +76,33 @@ const setSkillBonus = (e) => {
   const goodSkills = document.querySelector('#good-skills')
   const badSkills = document.querySelector('#bad-skills')
 
-  if (!selectedQuality) {
+  console.log(selectedQuality.prop('id'))
+
+  if (selectedQuality.prop('id') === undefined) {
     e.target.classList.add('normal')
     e.target.classList.remove('bad')
     e.target.classList.remove('good')
     e.target.childNodes[1].textContent = '0'
   }
 
-  if (selectedQuality.id === 'good-skills' && $goodCounter > 0) {
+  if (selectedQuality.prop('id') === 'good-skills' && $goodCounter > 0) {
     e.target.classList.remove('normal')
     e.target.classList.remove('bad')
     e.target.classList.add('good')
     e.target.childNodes[1].textContent = '+3'
   }
 
-  if (selectedQuality.id === 'bad-skills' && $badCounter > 0) {
+  if (selectedQuality.prop('id') === 'bad-skills' && $badCounter > 0) {
     e.target.classList.remove('normal')
     e.target.classList.remove('good')
     e.target.classList.add('bad')
     e.target.childNodes[1].textContent = '-2'
   }
 
-  $goodCounter = 3 - document.querySelectorAll('.good').length
-  $badCounter = 2 - document.querySelectorAll('.bad').length
+  $goodCounter = 3 - $('.good').length
+  $badCounter = 2 - $('.bad').length
+
+  console.log($goodCounter, $badCounter)
 
   goodSkills.textContent = `Escolha ${$goodCounter} Boa(s)`
   badSkills.textContent = `Escolha ${$badCounter} Ruin(s)`
@@ -106,6 +110,7 @@ const setSkillBonus = (e) => {
 }
 
 $('.skill').on('click', setSkillBonus)
+$('span').off('click', setSkillBonus)
 
 const itens = [
   {
