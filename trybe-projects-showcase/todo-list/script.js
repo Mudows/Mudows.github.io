@@ -97,7 +97,7 @@ function moveItemUp() {
   const mainList = document.getElementById('lista-tarefas');
   const listItens = mainList.getElementsByTagName('li');
   for (let i = 1; i < listItens.length; i += 1) {
-    if (listItens[i].style.backgroundColor === 'gray') {
+    if (listItens[i].classList.contains('selected')) {
       mainList.insertBefore(listItens[i], listItens[i - 1]);
       return;
     }
@@ -109,7 +109,7 @@ function moveItemDown() {
   const mainList = document.getElementById('lista-tarefas');
   const listItens = mainList.getElementsByTagName('li');
   for (let i = 0; i < listItens.length - 1; i += 1) {
-    if (listItens[i].style.backgroundColor === 'gray') {
+    if (listItens[i].classList.contains('selected')) {
       mainList.insertBefore(listItens[i + 1], listItens[i]);
       return;
     }
@@ -124,7 +124,7 @@ document
 function removeSelected() {
   const toRemove = document.getElementsByTagName('li');
   for (let i = 0; i < toRemove.length; i += 1) {
-    if (toRemove[i].className === 'selected') {
+    if (toRemove[i].classList.contains('selected')) {
       toRemove[i].remove();
       return;
     }
