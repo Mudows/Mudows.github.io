@@ -44,7 +44,7 @@ const attributesLimits = (e) => {
   const attrMaxValue = totCustomPts
   const attrMinValue = 0
   const targetAttr = e.target.value
-  if (attrMaxValue === 0) e.target.value = e.target.value - 1
+  if (attrMaxValue === 0) e.target.value = targetAttr - 1
   if (targetAttr < attrMinValue) e.target.value = attrMinValue
 }
 
