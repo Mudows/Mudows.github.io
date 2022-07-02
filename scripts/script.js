@@ -51,11 +51,11 @@ const myProjects = [
     url: '#',
   },
   {
-    title: 'Trybewarts',
-    available: false,
-    icon: '<i class="fa-brands fa-wpforms"></i><br>',
+    title: 'RPG Character',
+    available: true,
+    icon: '<i class="fa-solid fa-dice"></i><br>',
     id: 'project-8',
-    url: 'https://mudows.github.io/trybe-projects-showcase/trybewarts/',
+    url: 'https://mudows.github.io/rpg/mtds/character/chargen.html'
   },
 ];
 const myStacks = [
