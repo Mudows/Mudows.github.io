@@ -27,6 +27,8 @@ const validateCharacter = () => {
   $endBtn.prop('disabled', true)
 }
 
+$('#char-name').on('change', validateCharacter).on('input', validateCharacter)
+
 const updateCurrPts = () => {
   const remainingPts =
     parseInt(physVal.value) + parseInt(menVal.value) + parseInt(magVal.value)
