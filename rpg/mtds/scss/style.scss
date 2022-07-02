@@ -88,19 +88,22 @@ h2 {
   padding-top: 7px;
 }
 
+.skill {
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #good-skills,
-.good span {
+.good {
   background-color: green;
   color: white;
 }
 
-.normal span {
-  background-color: gray;
-  color: black;
-}
-
 #bad-skills,
-.bad span {
+.bad {
   background-color: red;
   color: white;
 }

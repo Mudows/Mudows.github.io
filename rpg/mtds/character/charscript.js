@@ -7,10 +7,11 @@ const physVal = document.querySelector('#physical')
 const menVal = document.querySelector('#mental')
 const magVal = document.querySelector('#magical')
 const $endBtn = $('#end-creation-btn')
-const skillQualityList = document.querySelectorAll('.skill-quality')
 let $goodCounter = 3
 let $badCounter = 2
 let totCustomPts = 20
+
+$('#tot-char-pts').text(totCustomPts)
 
 const validateCharacter = () => {
   const $charName = $('#char-name').val().length
@@ -57,60 +58,119 @@ magVal.addEventListener('change', attrFunctionWrapper)
 
 const selectedQuality = (e) => {
   const $selectedQuality = $('.selected')
-  /* console.log($selectedQuality.prop('id')) */
   if ($selectedQuality && e.target.id === $selectedQuality.prop('id')) {
     return e.target.classList.remove('selected')
   }
-  skillQualityList.forEach((quality) => {
-    quality.classList.remove('selected')
-  })
+  $('.skill-quality').removeClass('selected')
   e.target.classList.add('selected')
 }
 
-skillQualityList.forEach((quality) => {
-  quality.addEventListener('click', selectedQuality)
-})
+$('.skill-quality').on('click', selectedQuality)
 
+/// GENERATION OF THE SKILL LIST
+const skillSet = [
+  {
+    name: 'Atletismo',
+    type: 'Físico',
+    bonus: ''
+  },
+  {
+    name: 'Luta',
+    type: 'Físico',
+    bonus: ''
+  },
+  {
+    name: 'Precisão',
+    type: 'Físico',
+    bonus: ''
+  },
+  {
+    name: 'Erudição',
+    type: 'Mental',
+    bonus: ''
+  },
+  {
+    name: 'Engenharia',
+    type: 'Mental',
+    bonus: ''
+  },
+  {
+    name: 'Medicina',
+    type: 'Mental',
+    bonus: ''
+  },
+  {
+    name: 'Bênçãos',
+    type: 'Mágico',
+    bonus: ''
+  },
+  {
+    name: 'Espiritismo',
+    type: 'Mágico',
+    bonus: ''
+  },
+  {
+    name: 'Maldições',
+    type: 'Mágico',
+    bonus: ''
+  }
+]
+
+const generateSkillList = () => {
+  skillSet.forEach((skill) => {
+    if (skill.type === 'Físico') {
+      $('<li></li>')
+        .text(`${skill.name} ${skill.bonus}`)
+        .addClass('skill')
+        .appendTo('#physical-skills')
+    }
+    if (skill.type === 'Mental') {
+      $('<li></li>')
+        .text(`${skill.name} ${skill.bonus}`)
+        .addClass('skill')
+        .appendTo('#mental-skills')
+    }
+    if (skill.type === 'Mágico') {
+      $('<li></li>')
+        .text(`${skill.name} ${skill.bonus}`)
+        .addClass('skill')
+        .appendTo('#magical-skills')
+    }
+  })
+}
+
+generateSkillList()
+
+/// SETTING THE SKILL BONUS (COLOR CODE)
 const setSkillBonus = (e) => {
   const selectedQuality = $('.selected')
-  const goodSkills = document.querySelector('#good-skills')
-  const badSkills = document.querySelector('#bad-skills')
-
-  console.log(selectedQuality.prop('id'))
 
   if (selectedQuality.prop('id') === undefined) {
-    e.target.classList.add('normal')
     e.target.classList.remove('bad')
     e.target.classList.remove('good')
-    e.target.childNodes[1].textContent = '0'
   }
 
   if (selectedQuality.prop('id') === 'good-skills' && $goodCounter > 0) {
-    e.target.classList.remove('normal')
     e.target.classList.remove('bad')
     e.target.classList.add('good')
-    e.target.childNodes[1].textContent = '+3'
   }
 
   if (selectedQuality.prop('id') === 'bad-skills' && $badCounter > 0) {
-    e.target.classList.remove('normal')
     e.target.classList.remove('good')
     e.target.classList.add('bad')
-    e.target.childNodes[1].textContent = '-2'
   }
 
   $goodCounter = 3 - $('.good').length
   $badCounter = 2 - $('.bad').length
 
-  console.log($goodCounter, $badCounter)
-
+  const goodSkills = document.querySelector('#good-skills')
+  const badSkills = document.querySelector('#bad-skills')
   goodSkills.textContent = `Escolha ${$goodCounter} Boa(s)`
   badSkills.textContent = `Escolha ${$badCounter} Ruin(s)`
   validateCharacter()
 }
 
 $('.skill').on('click', setSkillBonus)
-$('span').off('click', setSkillBonus)
 
 const itens = [
   {
@@ -192,7 +252,7 @@ const updateResource = (e) => {
 }
 
 const createSheet = () => {
-  const resIds = ['health-box', 'phys-box', 'men-box', 'mag-box']
+  const resourceIds = ['health-box', 'phys-box', 'men-box', 'mag-box']
   $('#char-name')
     .addClass('form-control-plaintext')
     .removeClass('form-control')
@@ -210,7 +270,7 @@ const createSheet = () => {
   $('#men-resource').text(`${currMen} / ${maxMen}`)
   $('#mag-resource').text(`${currMag} / ${maxMag}`)
 
-  resIds.forEach((id) => {
+  resourceIds.forEach((id) => {
     const targetid = '#' + id
     $('<button></button>')
       .text('-')
@@ -226,6 +286,9 @@ const createSheet = () => {
       .appendTo(targetid)
   })
 
+  $('.skill-quality').on('click', selectedQuality)
+  $('#good-skills').text('+3')
+  $('#bad-skills').text('-2')
   $('#stats-and-attrs').removeClass('d-none')
   $('.skill').off('click', setSkillBonus)
   $('.delete').remove()
