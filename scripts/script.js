@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const $clientEmail = $('#client-email');
 const $submitButton = $('#submit-button');
 const myProjects = [
@@ -6,14 +7,14 @@ const myProjects = [
     available: true,
     icon: '<i class="fa-solid fa-list-check"></i><br>',
     id: 'project-1',
-    url: 'https://mudows.github.io/trybe-projects-showcase/todo-list/',
+    url: 'https://todo-list-lemon-theta.vercel.app/',
   },
   {
     title: 'Pixel Art Maker',
     available: true,
     icon: '<i class="fa-solid fa-border-all"></i><br>',
     id: 'project-2',
-    url: 'https://mudows.github.io/trybe-projects-showcase/pixel-art-project/',
+    url: 'https://pixel-art-project.vercel.app/',
   },
   {
     title: 'Simple Games',
