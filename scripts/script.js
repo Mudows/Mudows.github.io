@@ -17,7 +17,7 @@ const myProjects = [
     url: 'https://pixel-art-project.vercel.app/',
   },
   {
-    title: 'Simple Games',
+    title: 'Mudow\'s Arcade',
     available: false,
     icon: '<i class="fa-solid fa-gamepad"></i><br>',
     id: 'project-3',
@@ -38,7 +38,7 @@ const myProjects = [
     url: '#',
   },
   {
-    title: 'Tunes',
+    title: 'Sample Tunes',
     available: false,
     icon: '<i class="fa-solid fa-music"></i><br>',
     id: 'project-6',
@@ -57,6 +57,20 @@ const myProjects = [
     icon: '<i class="fa-solid fa-dice"></i><br>',
     id: 'project-8',
     url: 'https://mudows-simple-ttrpg.vercel.app/character/chargen.html'
+  },
+  {
+    title: 'Star Wars Planets',
+    available: false,
+    icon: '<i class="fa-solid fa-book-atlas"></i><br>',
+    id: 'project-9',
+    url: '#'
+  },
+  {
+    title: 'App de Receitas',
+    available: false,
+    icon: '<i class="fa-solid fa-kitchen-set"></i><br>',
+    id: 'project-10',
+    url: '#'
   },
 ];
 const myStacks = [
