@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const $clientEmail = $('#client-email');
 const $submitButton = $('#submit-button');
 const myProjects = [
@@ -6,21 +7,21 @@ const myProjects = [
     available: true,
     icon: '<i class="fa-solid fa-list-check"></i><br>',
     id: 'project-1',
-    url: 'https://mudows.github.io/trybe-projects-showcase/todo-list/',
+    url: 'https://todo-list-lemon-theta.vercel.app/',
   },
   {
     title: 'Pixel Art Maker',
     available: true,
     icon: '<i class="fa-solid fa-border-all"></i><br>',
     id: 'project-2',
-    url: 'https://mudows.github.io/trybe-projects-showcase/pixel-art-project/',
+    url: 'https://pixel-art-project.vercel.app/',
   },
   {
-    title: 'Simple Games',
+    title: 'Mudow\'s Arcade',
     available: false,
     icon: '<i class="fa-solid fa-gamepad"></i><br>',
     id: 'project-3',
-    url: 'https://mudows.github.io/simple-games/',
+    url: '#',
   },
   {
     title: 'Super Trunfo',
@@ -37,25 +38,39 @@ const myProjects = [
     url: '#',
   },
   {
-    title: 'Tunes',
+    title: 'Sample Tunes',
     available: false,
     icon: '<i class="fa-solid fa-music"></i><br>',
     id: 'project-6',
     url: '#',
   },
   {
-    title: 'Online Store',
+    title: 'Shopping Cart',
     available: false,
     icon: '<i class="fa-solid fa-store"></i><br>',
     id: 'project-7',
-    url: '#',
+    url: 'https://project-shopping-cart.vercel.app/',
   },
   {
     title: 'RPG Character',
     available: true,
     icon: '<i class="fa-solid fa-dice"></i><br>',
     id: 'project-8',
-    url: 'https://mudows.github.io/rpg/mtds/character/chargen.html'
+    url: 'https://mudows-simple-ttrpg.vercel.app/character/chargen.html'
+  },
+  {
+    title: 'Star Wars Planets',
+    available: false,
+    icon: '<i class="fa-solid fa-book-atlas"></i><br>',
+    id: 'project-9',
+    url: '#'
+  },
+  {
+    title: 'App de Receitas',
+    available: false,
+    icon: '<i class="fa-solid fa-kitchen-set"></i><br>',
+    id: 'project-10',
+    url: '#'
   },
 ];
 const myStacks = [
@@ -93,6 +108,11 @@ const myStacks = [
     name: 'React',
     img: '/img/stack_icons/react.png',
     url: 'https://reactjs.org/',
+  },
+  {
+    name: 'Redux',
+    img: '/img/stack_icons/redux.png',
+    url: 'https://redux.js.org/',
   },
   {
     name: 'Sass',
