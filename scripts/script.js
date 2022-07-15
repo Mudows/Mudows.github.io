@@ -21,7 +21,7 @@ const myProjects = [
     available: false,
     icon: '<i class="fa-solid fa-gamepad"></i><br>',
     id: 'project-3',
-    url: 'https://mudows.github.io/simple-games/',
+    url: '#',
   },
   {
     title: 'Super Trunfo',
@@ -45,18 +45,18 @@ const myProjects = [
     url: '#',
   },
   {
-    title: 'Online Store',
+    title: 'Shopping Cart',
     available: false,
     icon: '<i class="fa-solid fa-store"></i><br>',
     id: 'project-7',
-    url: '#',
+    url: 'https://project-shopping-cart.vercel.app/',
   },
   {
     title: 'RPG Character',
     available: true,
     icon: '<i class="fa-solid fa-dice"></i><br>',
     id: 'project-8',
-    url: 'https://mudows.github.io/rpg/mtds/character/chargen.html'
+    url: 'https://mudows-simple-ttrpg.vercel.app/character/chargen.html'
   },
 ];
 const myStacks = [
@@ -94,6 +94,11 @@ const myStacks = [
     name: 'React',
     img: '/img/stack_icons/react.png',
     url: 'https://reactjs.org/',
+  },
+  {
+    name: 'Redux',
+    img: '/img/stack_icons/redux.png',
+    url: 'https://redux.js.org/',
   },
   {
     name: 'Sass',
