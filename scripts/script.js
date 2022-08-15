@@ -72,6 +72,13 @@ const myProjects = [
     id: 'project-10',
     url: '#'
   },
+  {
+    title: 'JavaScript Calculator',
+    available: true,
+    icon: '<i class="fa-solid fa-calculator"></i><br>',
+    id: 'project-11',
+    url: 'https://fcc-javascript-calculator-rho.vercel.app/'
+  },
 ];
 const myStacks = [
   {
