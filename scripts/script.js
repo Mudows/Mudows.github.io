@@ -59,24 +59,10 @@ const myProjects = [
     url: 'https://mudows-simple-ttrpg.vercel.app/character/chargen.html'
   },
   {
-    title: 'Star Wars Planets',
-    available: false,
-    icon: '<i class="fa-solid fa-book-atlas"></i><br>',
-    id: 'project-9',
-    url: '#'
-  },
-  {
-    title: 'App de Receitas',
-    available: false,
-    icon: '<i class="fa-solid fa-kitchen-set"></i><br>',
-    id: 'project-10',
-    url: '#'
-  },
-  {
     title: 'JavaScript Calculator',
     available: true,
     icon: '<i class="fa-solid fa-calculator"></i><br>',
-    id: 'project-11',
+    id: 'project-9',
     url: 'https://fcc-javascript-calculator-rho.vercel.app/'
   },
 ];
