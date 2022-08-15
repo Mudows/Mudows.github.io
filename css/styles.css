@@ -113,7 +113,7 @@ a:hover {
 /* Project List */
 .project-box {
   /* width: 100% */
-  height: auto;
+  /* height: auto */
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,15 +124,19 @@ a:hover {
   text-align: center;
   border-radius: 5px;
   padding-top: 0.4em;
-  margin: 0.3em 0.5em;
-  background-color: #0088c5;
+  margin: 0.5em;
+  background-color: #00aaf6;
   text-decoration: none;
   box-shadow: -2px 2px 3px 0px #373737;
   font-family: "Kanit", sans-serif;
   color: #373737;
 }
-
 .project-card:hover {
+  background-color: #0088c5;
+  color: #373737;
+  box-shadow: -1px 1px 2px 0 #373737;
+}
+.project-card:active {
   background-color: #ff773a;
   box-shadow: inset -2px 2px 3px 0px #373737;
   color: #f2f0e6;
@@ -147,8 +151,8 @@ a:hover {
 /* End of Project List */
 /* STACK SHOWCASE STYLES */
 .stack {
-  width: 9%;
-  margin: 0.3em 0.5em;
+  width: 8%;
+  margin: 0.3em 1.7em;
   cursor: pointer;
 }
 

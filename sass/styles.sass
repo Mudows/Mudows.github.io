@@ -110,7 +110,7 @@ $buttonShadow: -2px 2px 3px 0px #373737
 
 .project-box
   /* width: 100% */
-  height: auto
+  /* height: auto */
   margin-left: auto
   margin-right: auto
 
@@ -120,17 +120,20 @@ $buttonShadow: -2px 2px 3px 0px #373737
   text-align: center
   border-radius: 5px
   padding-top: 0.4em
-  margin: 0.3em 0.5em
-  background-color: $color1
+  margin: 0.5em
+  background-color: $color1Lighter
   text-decoration: none
   box-shadow: $buttonShadow
   font-family: 'Kanit', sans-serif
   color: $color-text
-
-.project-card:hover
-  background-color: $color-3
-  box-shadow: inset $buttonShadow
-  color: $color-bg
+  &:hover
+    background-color: $color1
+    color: $color-text
+    box-shadow: -1px 1px 2px 0 #373737
+  &:active
+    background-color: $color-3
+    box-shadow: inset $buttonShadow
+    color: $color-bg
 
 .disabled, .disabled:hover
   background-color: lightgray
@@ -141,8 +144,8 @@ $buttonShadow: -2px 2px 3px 0px #373737
 /* STACK SHOWCASE STYLES */
 
 .stack
-  width: 9%
-  margin: 0.3em 0.5em
+  width: 8%
+  margin: 0.3em 1.7em
   cursor: pointer
 
 .stack-box
