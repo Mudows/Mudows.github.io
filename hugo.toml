@@ -1,3 +1,17 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://mudows.github.io/"
+title = "Diego Cezar | Portfolio"
+theme = "introduction"
+defaultContentLanguage = "pt-br"
+enableRobotsTXT = true
+
+[languages]
+
+  [languages.pt-br]
+    languageName = "Português"
+    weight = 1
+    contentDir = "content/pt-br"
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
