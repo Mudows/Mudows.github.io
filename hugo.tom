@@ -1,0 +1,44 @@
+baseURL = "http://localhost:1313/"
+title = "Diego Cezar | Portfolio"
+theme = "introduction"
+languageCode = "pt-br"
+
+[params]
+  title = "Diego Cezar"
+  subtitle = "Front-end & JavaScript Developer"
+
+  intro = """
+Sou desenvolvedor front-end focado em JavaScript.
+
+Este é um portfólio simples com projetos práticos.
+"""
+
+  showFooter = true
+  themeStyle = "auto"
+
+  email = "diegocezar.dev@gmail.com"
+
+  [params.projects]
+    useTwoColumns = true
+
+    [[params.projects.items]]
+      name = "Pixel Art Editor"
+      description = "Editor de Pixel Art em JavaScript."
+      url = "https://pixel-art-project.vercel.app/"
+      repo = "https://github.com/Mudows/pixel-art-project"
+
+    [[params.projects.items]]
+      name = "To Do List"
+      description = "Lista de tarefas com DOM."
+      url = "http://todo-list-mudows.vercel.app/"
+      repo = "https://github.com/Mudows/todo-list"
+
+  [[params.social]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/Mudows"
+
+  [[params.social]]
+    name = "LinkedIn"
+    icon = "linkedin"
+    url = "https://www.linkedin.com/in/dmcezar/"
