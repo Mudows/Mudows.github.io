@@ -1,6 +1,6 @@
 ---
-title: "Projetos"
+title: "Meus Projetos"
 weight: 10
 ---
 
-Here is some introduction text for my projects. You can set this text in the `/projects/_index.md` file. This page uses the `/layouts/projects/list.html` template.
+Aqui estão alguns dos meus projetos recentes. Sinta-se à vontade para explorar o código-fonte e as demonstrações. Esta seção está em constante atualização à medida que concluo novos projetos.

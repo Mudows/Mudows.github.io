@@ -1,17 +1,24 @@
 ---
 title: "Sobre mim"
-image: "profile.jpg"
+image: "eu.png"
 weight: 8
 ---
 
-This is **Introduction**, a minimalist website theme made for [Hugo](https://gohugo.io).
+Meu nome é **Diego M. Cezar**, sou um game designer e desenvolvedor front-end apaixonado por criar experiências incríveis. Com habilidades em HTML, CSS e JavaScript, busco constantemente aprimorar meus conhecimentos e explorar novas tecnologias para entregar projetos de alta qualidade.
 
-### Features
+Eu utilizo as seguintes ferramentas e tecnologias em meu fluxo de trabalho:
 
-* Responsive display on any size screen
-* Light and Dark themes right out of the box
-* Multilingual - supports side-by-side content in multiple languages
-* Any number of custom index page sections from Markdown files
-* _Projects_ section with any number of projects: highly configurable as a photo gallery, modals, or external links
-* _Blog_ section with optional _Latest Post_, on the main page or as a separate section
-* Styled Markdown throughout with support for Hugo's syntax highlighting
+{{< stacks_category name="Design" >}}
+
+{{< stacks_category name="Game Dev" >}}
+
+{{< stacks_category name="Frontend (Core & Estilo)" >}}
+
+{{< stacks_category name="Frontend (Script & Frameworks)" >}}
+
+{{< stacks_category name="Backend & Linguagens" >}}
+
+{{< stacks_category name="Banco de Dados" >}}
+
+{{< stacks_category name="DevOps & Ferramentas" >}}
+

@@ -3,6 +3,7 @@ title: "Olá! Eu sou Diego"
 headless: true
 ---
 
-Sou desenvolvedor front-end focado em JavaScript.
+Boas-vindas ao meu portfólio online.
 
-Este é um portfólio simples com projetos práticos.
+Sou game designer e desenvolvedor front-end.
+
