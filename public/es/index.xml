@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introducción</title>
-    <link>http://localhost:1313/es/</link>
+    <link>https://mudows.github.io/es/</link>
     <description>Recent content on Introducción</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mudows.github.io/es/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
