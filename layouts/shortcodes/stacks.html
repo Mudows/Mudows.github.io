@@ -1,0 +1,28 @@
+{{ $data := site.Data.stacks }}
+
+<div class="stack-container">
+  {{ range $data }}
+    <a href="{{ .url }}" target="_blank" rel="noreferrer" class="stack-item" title="{{ .name }}">
+      <img src="{{ .icon }}" alt="{{ .name }}" loading="lazy" width="40" height="40">
+    </a>
+  {{ end }}
+</div>
+
+<style>
+  .stack-container {
+    display: flex;
+    flex-wrap: wrap;       /* Permite quebra de linha (Responsividade) */
+    justify-content: center; /* Centraliza os itens */
+    gap: 12px;             /* Espaçamento entre ícones */
+    margin: 20px 0;
+  }
+
+  .stack-item img {
+    transition: transform 0.2s ease; /* Animação suave */
+  }
+
+  /* Efeito de Hover opcional */
+  .stack-item:hover img {
+    transform: scale(1.1);
+  }
+</style>

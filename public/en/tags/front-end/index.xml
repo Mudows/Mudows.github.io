@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front-End on Diego Cezar | Portfolio</title>
+    <link>//localhost:1313/en/tags/front-end/</link>
+    <description>Recent content in Front-End on Diego Cezar | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pixel Art Editor</title>
+      <link>//localhost:1313/en/projects/pixel-art/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/projects/pixel-art/</guid>
+      <description>&lt;p&gt;A simple &lt;strong&gt;Pixel Art editor&lt;/strong&gt; built with pure JavaScript, using canvas and direct pixel manipulation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

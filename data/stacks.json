@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Azure",
+    "icon": "https://skillicons.dev/icons?i=azure",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/azure"
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "https://skillicons.dev/icons?i=bootstrap",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/bootstrap"
+  },
+  {
+    "name": "Bulma",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/bulma"
+  },
+  {
+    "name": "C#",
+    "icon": "https://skillicons.dev/icons?i=cs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/csharp"
+  },
+  {
+    "name": "CSS3",
+    "icon": "https://skillicons.dev/icons?i=css",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/css3"
+  },
+  {
+    "name": "Django",
+    "icon": "https://skillicons.dev/icons?i=django",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/django"
+  },
+  {
+    "name": "Docker",
+    "icon": "https://skillicons.dev/icons?i=docker",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/docker"
+  },
+  {
+    "name": "Express",
+    "icon": "https://skillicons.dev/icons?i=express",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/express"
+  },
+  {
+    "name": "Git",
+    "icon": "https://skillicons.dev/icons?i=git",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/git"
+  },
+  {
+    "name": "HTML5",
+    "icon": "https://skillicons.dev/icons?i=html",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/html5"
+  },
+  {
+    "name": "Hugo",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hugo/hugo-original.svg",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/hugo"
+  },
+  {
+    "name": "Illustrator",
+    "icon": "https://skillicons.dev/icons?i=illustrator",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/illustrator"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "https://skillicons.dev/icons?i=js",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/javascript"
+  },
+  {
+    "name": "Jest",
+    "icon": "https://skillicons.dev/icons?i=jest",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/jest"
+  },
+  {
+    "name": "Materialize",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/materialize"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "https://skillicons.dev/icons?i=mongodb",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/mongodb"
+  },
+  {
+    "name": "MySQL",
+    "icon": "https://skillicons.dev/icons?i=mysql",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/mysql"
+  },
+  {
+    "name": "Node.js",
+    "icon": "https://skillicons.dev/icons?i=nodejs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/nodejs"
+  },
+  {
+    "name": "Photoshop",
+    "icon": "https://skillicons.dev/icons?i=photoshop",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/photoshop"
+  },
+  {
+    "name": "Python",
+    "icon": "https://skillicons.dev/icons?i=py",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/python"
+  },
+  {
+    "name": "React",
+    "icon": "https://skillicons.dev/icons?i=react",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/react"
+  },
+  {
+    "name": "Redux",
+    "icon": "https://skillicons.dev/icons?i=redux",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/redux"
+  },
+  {
+    "name": "Sass",
+    "icon": "https://skillicons.dev/icons?i=sass",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/sass"
+  },
+  {
+    "name": "Tailwind",
+    "icon": "https://skillicons.dev/icons?i=tailwind",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/tailwind"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "https://skillicons.dev/icons?i=ts",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/typescript"
+  }
+]

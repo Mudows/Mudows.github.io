@@ -1,0 +1,47 @@
+{{ $search := .Get "name" }}
+{{ $data := site.Data.stacks_category }}
+
+{{ range $data }}
+  {{/* Verifica se o nome da categoria no JSON contém o termo buscado */}}
+  {{ if in .category $search }}
+    
+    <div class="stack-group">
+      <h5 class="stack-title">{{ .category }}</h5>
+      
+      <div class="stack-container">
+        {{ range .items }}
+          <a href="{{ .url }}" target="_blank" rel="noreferrer" class="stack-item" title="{{ .name }}">
+            <img src="{{ .icon }}" alt="{{ .name }}" loading="lazy" width="40" height="40">
+          </a>
+        {{ end }}
+      </div>
+    </div>
+
+  {{ end }}
+{{ end }}
+
+<style>
+  .stack-group { margin-bottom: 0px; box-shadow: none; border: none; }
+  .stack-title { 
+    font-size: 1rem; 
+    margin-bottom: 0px; 
+    color: #04C4D9; /* Ajuste conforme seu tema */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: none;
+  }
+  .stack-item img {
+    transition: transform 0.2s ease;
+    box-shadow: none;
+    border: none;
+  }
+  .stack-item:hover img {
+    transform: scale(1.15);
+  }
+</style>
