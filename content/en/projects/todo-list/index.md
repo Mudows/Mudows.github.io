@@ -5,7 +5,7 @@ draft: false
 github: "https://github.com/Mudows/todo-list"
 demo: "http://todo-list-mudows.vercel.app/"
 tags: ["JavaScript", "Canvas", "Front-end"]
-weight: 2
+weight: 4
 ---
 
 ## To Do List App

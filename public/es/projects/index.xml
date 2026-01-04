@@ -8,6 +8,20 @@
     <language>es</language>
     <atom:link href="http://localhost:1313/es/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Fotografía</title>
+      <link>http://localhost:1313/es/projects/photography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/projects/photography/</guid>
+      <description>&lt;h2 id=&#34;a-veces-tomo-fotografías&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#a-veces-tomo-fotograf%c3%adas&#34;&gt;A veces tomo fotografías&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Este proyecto es sobre fotografías que tomo. A veces, son fotos de gatos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Diseño</title>
+      <link>http://localhost:1313/es/projects/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/projects/design/</guid>
+      <description>&lt;p&gt;Este tema fue diseñado por &lt;a href=&#34;https://victoria.dev&#34;&gt;Victoria Drake&lt;/a&gt;. Ve, explora! 💪&lt;/p&gt;&#xA;&lt;p&gt;Si deseas usarlo en tu sitio web, revisa la sección al final de la página principal. 👍&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Escribiendo</title>
       <link>http://localhost:1313/es/projects/writing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
