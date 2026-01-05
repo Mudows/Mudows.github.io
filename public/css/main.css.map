@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/prome/OneDrive/Documentos/Projetos/HUGO Pages/Mudows.github.io",
+	"sourceRoot": "C:/Users/prome/OneDrive/Documentos/Projetos/HUGO-Pages/Mudows.github.io",
 	"sources": [
 		"themes/introduction/assets/sass/style.sass",
 		"themes/introduction/assets/sass/_fonts.sass",

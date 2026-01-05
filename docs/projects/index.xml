@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Introduction</title>
-    <link>http://example.com/projects/</link>
-    <description>Recent content in Projects on Introduction</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Meus Projetos on Introduction</title>
+    <link>https://mudows.github.io/projects/</link>
+    <description>Recent content in Meus Projetos on Introduction</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    
-	<atom:link href="http://example.com/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mudows.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Photography</title>
-      <link>http://example.com/projects/photography/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.com/projects/photography/</guid>
-      <description>Sometimes I take pictures This project is about the pictures I take. Sometimes, they are pictures of cats.</description>
+      <title>Calculadora JavaScript</title>
+      <link>https://mudows.github.io/projects/js-calculator/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mudows.github.io/projects/js-calculator/</guid>
+      <description>&lt;h2 id=&#34;calculadora-javascript&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#calculadora-javascript&#34;&gt;Calculadora JavaScript&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Calculadora simples desenvolvida com JavaScript puro, permitindo operações básicas como adição, subtração, multiplicação e divisão.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Design</title>
-      <link>http://example.com/projects/design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.com/projects/design/</guid>
-      <description>This theme was designed by Victoria Drake. Go on, explore! 💪
-If you want to use it for your website, check out the section at the bottom of the main page. 👍</description>
+      <title>Pokedex</title>
+      <link>https://mudows.github.io/projects/pokedex/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mudows.github.io/projects/pokedex/</guid>
+      <description>&lt;h2 id=&#34;pokedex&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#pokedex&#34;&gt;Pokedex&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Aplicação de &lt;strong&gt;Pokedex&lt;/strong&gt; desenvolvida com JavaScript puro, permitindo buscar informações sobre Pokémon, visualizar detalhes e filtrar por tipo.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Writing</title>
-      <link>http://example.com/projects/writing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.com/projects/writing/</guid>
-      <description>Aromatic aroma con panna, crema so coffee robust coffee barista, café au lait trifecta that strong blue mountain cortado aftertaste. Aroma extraction french press, skinny sweet, blue mountain cup roast barista, beans, extra cappuccino mug crema strong.
-To go viennese cream to go, flavour, so mocha as, carajillo iced et a siphon froth. Aged, eu, cup, brewed aroma kopi-luwak, coffee, id viennese french press brewed grounds acerbic froth. Decaffeinated acerbic, spoon beans seasonal, french press café au lait mazagran roast chicory, pumpkin spice galão as fair trade, dark irish cup ristretto half and half whipped shop.</description>
+      <title>Pixel Art Editor</title>
+      <link>https://mudows.github.io/projects/pixel-art/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mudows.github.io/projects/pixel-art/</guid>
+      <description>&lt;h2 id=&#34;pixel-art-editor&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#pixel-art-editor&#34;&gt;Pixel Art Editor&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Editor simples de &lt;strong&gt;Pixel Art&lt;/strong&gt;, feito com JavaScript puro, utilizando canvas e manipulação direta de pixels.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>To Do List App</title>
+      <link>https://mudows.github.io/projects/todo-list/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mudows.github.io/projects/todo-list/</guid>
+      <description>&lt;h2 id=&#34;to-do-list-app&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#to-do-list-app&#34;&gt;To Do List App&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Aplicativo de &lt;strong&gt;Lista de Tarefas (To Do List)&lt;/strong&gt; desenvolvido com JavaScript puro, permitindo adicionar, remover e marcar tarefas como concluídas.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -1,3 +1,4 @@
+publishDir                       = "docs"
 baseURL                          = "https://mudows.github.io/"   # Your domain name. Must end with "/"
 theme                            = "introduction"
 DefaultContentLanguage           = "en"                    # Default language for multilingual sites

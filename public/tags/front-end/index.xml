@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Front-End on Introduction</title>
-    <link>https://mudows.github.io/tags/front-end/</link>
+    <link>http://localhost:1313/tags/front-end/</link>
     <description>Recent content in Front-End on Introduction</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mudows.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Calculadora JavaScript</title>
-      <link>https://mudows.github.io/projects/js-calculator/</link>
+      <link>http://localhost:1313/projects/js-calculator/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://mudows.github.io/projects/js-calculator/</guid>
+      <guid>http://localhost:1313/projects/js-calculator/</guid>
       <description>&lt;h2 id=&#34;calculadora-javascript&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#calculadora-javascript&#34;&gt;Calculadora JavaScript&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Calculadora simples desenvolvida com JavaScript puro, permitindo operações básicas como adição, subtração, multiplicação e divisão.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pokedex</title>
-      <link>https://mudows.github.io/projects/pokedex/</link>
+      <link>http://localhost:1313/projects/pokedex/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://mudows.github.io/projects/pokedex/</guid>
+      <guid>http://localhost:1313/projects/pokedex/</guid>
       <description>&lt;h2 id=&#34;pokedex&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#pokedex&#34;&gt;Pokedex&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Aplicação de &lt;strong&gt;Pokedex&lt;/strong&gt; desenvolvida com JavaScript puro, permitindo buscar informações sobre Pokémon, visualizar detalhes e filtrar por tipo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pixel Art Editor</title>
-      <link>https://mudows.github.io/projects/pixel-art/</link>
+      <link>http://localhost:1313/projects/pixel-art/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://mudows.github.io/projects/pixel-art/</guid>
+      <guid>http://localhost:1313/projects/pixel-art/</guid>
       <description>&lt;h2 id=&#34;pixel-art-editor&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#pixel-art-editor&#34;&gt;Pixel Art Editor&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Editor simples de &lt;strong&gt;Pixel Art&lt;/strong&gt;, feito com JavaScript puro, utilizando canvas e manipulação direta de pixels.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To Do List App</title>
-      <link>https://mudows.github.io/projects/todo-list/</link>
+      <link>http://localhost:1313/projects/todo-list/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://mudows.github.io/projects/todo-list/</guid>
+      <guid>http://localhost:1313/projects/todo-list/</guid>
       <description>&lt;h2 id=&#34;to-do-list-app&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#to-do-list-app&#34;&gt;To Do List App&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Aplicativo de &lt;strong&gt;Lista de Tarefas (To Do List)&lt;/strong&gt; desenvolvido com JavaScript puro, permitindo adicionar, remover e marcar tarefas como concluídas.&lt;/p&gt;</description>
     </item>
   </channel>
