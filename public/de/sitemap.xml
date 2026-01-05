@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mudows.github.io/de/series/</loc>
+    <loc>http://localhost:1313/de/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://mudows.github.io/es/series/"
+                href="http://localhost:1313/es/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://mudows.github.io/series/"
+                href="http://localhost:1313/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mudows.github.io/de/series/"
+                href="http://localhost:1313/de/series/"
                 />
   </url><url>
-    <loc>https://mudows.github.io/de/tags/</loc>
+    <loc>http://localhost:1313/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://mudows.github.io/es/tags/"
+                href="http://localhost:1313/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://mudows.github.io/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mudows.github.io/de/tags/"
+                href="http://localhost:1313/de/tags/"
                 />
   </url><url>
-    <loc>https://mudows.github.io/de/</loc>
+    <loc>http://localhost:1313/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://mudows.github.io/es/"
+                href="http://localhost:1313/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://mudows.github.io/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mudows.github.io/de/"
+                href="http://localhost:1313/de/"
                 />
   </url>
 </urlset>
