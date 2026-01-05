@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modal on Introduction</title>
-    <link>http://localhost:1313/tags/modal/</link>
+    <link>https://mudows.github.io/tags/modal/</link>
     <description>Recent content in Modal on Introduction</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/modal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mudows.github.io/tags/modal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pokedex</title>
-      <link>http://localhost:1313/projects/pokedex/</link>
+      <link>https://mudows.github.io/projects/pokedex/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/pokedex/</guid>
+      <guid>https://mudows.github.io/projects/pokedex/</guid>
       <description>&lt;h2 id=&#34;pokedex&#34; class=&#34;anchor-link&#34;&gt;&lt;a href=&#34;#pokedex&#34;&gt;Pokedex&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Aplicação de &lt;strong&gt;Pokedex&lt;/strong&gt; desenvolvida com JavaScript puro, permitindo buscar informações sobre Pokémon, visualizar detalhes e filtrar por tipo.&lt;/p&gt;</description>
     </item>
   </channel>
