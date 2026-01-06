@@ -45,7 +45,7 @@
     ]
   },
   {
-    "category": "Frontend",
+    "category": "Frontend (Core & Estilo)",
     "items": [
       {
         "name": "HTML5",
@@ -86,7 +86,12 @@
         "name": "Materialize",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
         "url": "https://developer.mozilla.org/en-US/docs/Web/materialize"
-      },
+      }
+    ]
+  },
+  {
+    "category": "Frontend (Script & Frameworks)",
+    "items": [
       {
         "name": "JavaScript",
         "icon": "https://skillicons.dev/icons?i=js",

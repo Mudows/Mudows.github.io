@@ -1,6 +1,6 @@
 ---
 title: "Sobre mim"
-image: "eu.png"
+image: "eu.jpg"
 weight: 8
 ---
 
@@ -8,13 +8,9 @@ Meu nome é **Diego M. Cezar**, sou um game designer e desenvolvedor front-end a
 
 Eu utilizo as seguintes ferramentas e tecnologias em meu fluxo de trabalho:
 
-{{< stacks_category name="Design" >}}
-
 {{< stacks_category name="Game Dev" >}}
 
-{{< stacks_category name="Frontend (Core & Estilo)" >}}
-
-{{< stacks_category name="Frontend (Script & Frameworks)" >}}
+{{< stacks_category name="Frontend" >}}
 
 {{< stacks_category name="Backend & Linguagens" >}}
 
